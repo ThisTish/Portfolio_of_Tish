@@ -34,8 +34,10 @@
 // !THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
 	// todo import and use NavLink package
 		// * <a> is <NavLink> and href="" is to=""
+		// *react-router
 		// *have to use react-router-dom
-
+		// 20-1-23-main.jsx
+		// *{ Outlet } is the component conditionally switches between routes/pages
 // !WHEN I load the portfolio the first time
 // !THEN the About Me title and section are selected by default
 	// todo useEffect() 
@@ -118,6 +120,16 @@
 // *DESIGN
 	// todo wholePage
 		// todo figure out colorscheme
+			// Blue
+			// .ColorSchemeProfile-1-hex { color: #8AA6A3; }
+			// Green
+			// .ColorSchemeProfile-2-hex { color: #8EA66A; }
+			// Yellow
+			// .ColorSchemeProfile-3-hex { color: #D9B95B; }
+			// Red
+			// .ColorSchemeProfile-4-hex { color: #BF5349; }
+			// White
+			// .ColorSchemeProfile-5-hex { color: #F2F2F2; }
 		// todo look into animations
 		// todo look into react design components
 		// todo header
