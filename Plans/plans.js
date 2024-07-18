@@ -119,6 +119,7 @@
 
 // *DESIGN
 	// todo wholePage
+	// ?dark mode
 		// todo figure out colorscheme
 			// Blue
 			// .ColorSchemeProfile-1-hex { color: #8AA6A3; }
