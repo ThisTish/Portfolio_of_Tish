@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -11,6 +12,15 @@ export default {
       },
       gridTemplateColumns: {
         '70/30': '70% 28%'
+      },
+      colors: {
+        secondary: 'var(--secondary)',
+        primary: 'var(--primary)',
+        green: 'var(--green)',
+        yellow: 'var(--yellow)',
+        red: 'var(--red)',
+        highlight: 'var(--highlight)',
+        shadow: 'var(--shadow)'
       }
     },
   },

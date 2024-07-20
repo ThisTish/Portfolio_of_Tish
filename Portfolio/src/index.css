@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+
+	/* colors */
+	body {
+	--secondary: #003B4A;
+	--primary: #B8DED5;
+	--green: #8EA66A;
+	--yellow: #D9B95B;
+	--red: #BF5349;
+	--highlight: #F2F2F2;
+	--shadow: #464646;
+	}
+	/* not quite here yet. need more tailwind config for this. might change to secondary palette */
+	body.dark-mode{
+		--primary: #003B4A;
+		--secondary: #B8DED5;
+		--green: #8EA66A;
+		--yellow: #D9B95B;
+		--red: #BF5349;
+		--shadow: #F2F2F2;
+		--highlight: #464646;
+	}
+}

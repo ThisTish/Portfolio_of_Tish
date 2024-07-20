@@ -1,13 +1,38 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import profilePic from '../assets/images/profilePic.mp4'
 
 function ProfilePicAnimated() {
+// 	const darkModeToggle= () =>{ [isDarkMode, setIsDarkMode] = useState(false) }
+
+// 	useEffect(() => {
+// 		isDarkMode ? document.body.classList.add('dark-mode') : document.body.classList.remove('dark-mode'), [isDarkMode]
+// 	})
+
+// 	const handleToggle = () =>{
+// 		setIsDarkMode(prevMode => !prevMode)
+// 	}
+
   return (
-	<div>
-		<video width="600" autoPlay muted>
-			<source src={profilePic} type='video/mp4'/>
-		</video>
+	<>
+<div>
+	<video width="600" autoPlay muted>
+ 			<source src={profilePic} type='video/mp4'/>
+ 		</video>
+{/* 
+// 		<label className="m5">
+// 			<span>DarkMode</span>	
+// 			<input type='checkbox' checked={isDarkMode} onChange={handleToggle} className='form-checkbox' ></input>
+// 		</label> */}
+
+		<div className="w-10 h-10 bg-primary"></div>
+		<div className="w-10 h-10 bg-secondary"></div>
+		<div className="w-10 h-10 bg-green"></div>
+		<div className="w-10 h-10 bg-yellow"></div>
+		<div className="w-10 h-10 bg-red"></div>
+		<div className="w-10 h-10 bg-highlight"></div>
+		<div className="w-10 h-10 bg-shadow"></div>
 	</div>
+	</>
   )
 }
 

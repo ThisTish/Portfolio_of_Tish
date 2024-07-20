@@ -11,14 +11,13 @@
 
 // !WHEN I view the header
 // !THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
-	// todo design & create HERO component
-	// todo design & create name* graphic
+	// // design & create HERO component
+	// // design & create name* graphic
 	// todo design & create header* component
 	
 // !WHEN I view the navigation titles
 // !THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
 	// todo create links*:
-		// ? Home Link(maybe)
 		// todo About Me Link
 		// todo Portfolio Link
 		// todo Contact Link
@@ -41,23 +40,27 @@
 // !WHEN I load the portfolio the first time
 // !THEN the About Me title and section are selected by default
 	// todo useEffect() 
-		// ? useEffect = '/AboutMe', []
+		//* router option '/', aboutme
+		//  useEffect = '/AboutMe', []
 
 // !WHEN I am presented with the About Me section
 //! THEN I see a recent photo or avatar of the developer and a short bio about them
-	// todo create photo* graphic
-	// todo refine About me paragraph
-	// todo design AboutMe* section
+	// // create photo* graphic
+	// todo refine About me paragraph & sections
+	// // design AboutMe* section
+	// todo create AboutMe* section
 
 // !WHEN I am presented with the Portfolio section
 // !THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
 	// todo design PORTFOLIO component
-		// todo design PROJECT simple description on left or right that sticks(*sticky) with the projects
-			// todo useEffect() to highlight links project is on, or update description when project displayed
+		// // mobile design
+		// todo desktop design
+	// todo create PORTFOLIO component
+		// todo design PROJECT simple description
 		// todo design PROJECTCARD components
 			// todo Title
 			// todo Image
-				// *create professional images matching tone
+				// *create professional images matching tone- className="grayscale hover:grayscale-0"
 			// todo Links
 				// todo Deployed Site
 				// todo GitHub site
@@ -75,7 +78,7 @@
 		// todo Submit Button
 		// todo Cancel Button
 	// todo create FORM component
-	// todo create Modal*
+	// *add accent-* to show when active, and when completed?
 
 // !WHEN I move my cursor out of one of the form fields without entering text
 // !THEN I receive a notification that this field is required
@@ -94,9 +97,9 @@
 
 // !WHEN I view the footer
 // !THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
-	// todo create FOOTER
 	// todo design Footer*
 	// todo find/use social media icons*
+	// todo create FOOTER
 		//* react-fa-icons?
 	// ?sticky?
 
@@ -134,6 +137,7 @@
 		// todo look into animations
 		// todo look into react design components
 		// todo header
+		// todo logo? image?
 			// todo navbar
 		// todo hero
 			// todo name
@@ -142,17 +146,23 @@
 			// todo description
 		// todo portfolio
 			// todo projectCards
+				// todo links
+				// todo image
+				// todo description
 		// todo resume section
-			// todo resume links & modals
+			// todo resume link
+			// todo create resume
 			// todo proficiencies
+		// todo contact form
 		// todo footer
 			// todo socialMedia Icons
 
 	// *IMAGES
-		// todo name
-		// todo pic
+		// // name
+		// // pic
 		// todo projects(6)
-		// ? backgrounds
+		// todo background images/floof
+		
 
 //*FUNCTIONS
 	// TODO USESTATES
