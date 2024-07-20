@@ -161,14 +161,44 @@
 		// // name
 		// // pic
 		// todo projects(6)
-		// todo background images/floof
+		// todo background images/floofy
+
+	// *ICONS
+		//todo Hamburger menu for sm:
+			// *or icons-AboutMe, Portfolio, ContactMe, Resume
+		//todo circle icons for validating form infos
+		// todo socials
+			// todo GitHub
+			// todo LinkedIn
+			// todo Email
+			// todo Instagram
+			// todo Twitter
+		// todo proficiencies
+			// todo HTML
+			// todo CSS
+			// todo JavaScript
+			// todo Node.js
+			// todo React
+			// todo Express.js
+			// todo SQL
+			// todo NoSQL
+			// todo Sequelize
+			// todo Mongoose
+			// todo TailwindCSS
+			// todo Handlebars
+			// todo EJS
+			// todo Bootstrap
+			// todo Figma
+			// todo JQuery
+			// todo Framer
+
 		
 
 //*FUNCTIONS
 	// TODO USESTATES
 		// todo for isActive
 		// todo form inputs
-			// todo required fields
+			// todo required fields 
 			// todo verify email
 	// TODO USEEFFECTS
 		// todo load on aboutMe

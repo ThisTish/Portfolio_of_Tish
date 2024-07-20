@@ -1,15 +1,22 @@
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import './index.css'
-import ProfilePicAnimated from './components/ProfilePicAnimated.jsx'
+import MainLayout from './layouts/MainLayout.jsx'
 
-function App() {
+
+const router = createBrowserRouter (
+  createRoutesFromElements(
+    <Route path='/' element={<MainLayout />} >
+
+    </Route>
+  )
+)
+
+
+
+const App = () => {
 
   return (
-    <>
-      <div>
-        <h1 className='text-5xl font-bold text-lime-900'>This is only the beginning</h1>
-        <ProfilePicAnimated />
-      </div>
-    </>
+    <RouterProvider router={router} />
   )
 }
 
