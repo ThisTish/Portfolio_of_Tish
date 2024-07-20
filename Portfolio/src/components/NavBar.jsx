@@ -9,9 +9,7 @@ const NavBar = () => {
 
   return (
 	<div className='bg-green w-screen'>
-    <NavLink to='/'>
-    <img src={ logo } className='h-10 w-auto mx-auto md:h-20' alt='TS-Tish Sirface Initials' />
-    </NavLink>
+  
     <nav>
       <ul className="text-red font-semibold bg-yellow max-w-screen-md mx-auto justify-center space-x-20 rounded-full hidden md:flex">
         {/* <icon for hamburger menu */}
