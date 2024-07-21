@@ -16,7 +16,7 @@ const ProjectCards = () => {
           <img src={inOrOutPic} alt="In Or Out playful logo" className='w-20 h-20 rounded-full grayscale brightness-150 hover:brightness-100 hover:grayscale-0 transition duration-300 ease-in-out' />
       </div>
 
-        <div className="text-red text-sm font-semibold flex flex-col items-end -ml-12">
+        <div className="text-red text-sm font-bold flex flex-col items-end -ml-12">
             <a href="https://in-or-out-6n4t.onrender.com/">Website</a>
             <a href="https://github.com/Sean-K-Madigan/In-Or-Out">Repo</a>
 
@@ -26,7 +26,7 @@ const ProjectCards = () => {
       {/* 2nd card (mirrored) */}
       <div className='flex'>
 
-      <div className="text-red text-sm font-semibold flex flex-col justify-end -mr-12 z-10">
+      <div className="text-red text-sm font-bold flex flex-col justify-end -mr-12 z-10">
             <a href="https://github.com/Sean-K-Madigan/In-Or-Out">Repo</a>
           <a href="https://blogology2-0.onrender.com">Website</a>
         </div>
