@@ -4,7 +4,7 @@ import logo from '../assets/images/logo.png'
 
 const Footer = () => {
 	return (
-		<div className="bg-secondary w-screen flex ">
+		<div className="bg-secondary w-screen flex mt-auto">
 			<footer className="flex items-center">
 		<NavLink to='/'>
 			<img src={ logo } className='h-10 w-auto mx-auto md:h-20' alt='TS-Tish Sirface Initials' />

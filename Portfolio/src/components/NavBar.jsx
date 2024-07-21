@@ -10,8 +10,8 @@ const NavBar = () => {
   return (
 	<div>
   
-    <nav className="text-red rounded-tl-full rounded-bl-full font-semibold bg-yellow max-w-screen-md">
-      <ul className=' space-x-20 py-1 px-10 hidden md:flex' >
+    <nav className="text-red rounded-tl-full hidden lg:flex rounded-bl-full font-semibold bg-yellow max-w-screen-md">
+      <ul className=' space-x-20 py-1 px-10 ' >
         {/* <icon for hamburger menu */}
         <NavLink to='/aboutMe' >AboutMe</NavLink> 
         <NavLink to='/portfolio' >Portfolio</NavLink> 

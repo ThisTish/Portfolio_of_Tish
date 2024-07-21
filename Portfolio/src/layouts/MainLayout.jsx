@@ -7,9 +7,9 @@ import Header from "../components/Header"
 const MainLayout = () => {
 	return (
 		<>
-			<Header />
-			<Outlet />
-			<Footer />
+				<Header />
+				<Outlet />
+				<Footer />
 		</>
 
 	)
