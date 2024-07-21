@@ -10,7 +10,7 @@ const ContactForm = () => {
 
 				<div>
 					<label className="text-secondary font-light m-3" htmlFor="">Email</label>
-					<input type="text" className="text-shadow rounded-full bg-primary border-highlight border-4" />
+					<input type="text" className="text-shadow rounded-full bg-primary border-highlight border-4 mr-2" />
 				</div>
 
 				<div>

@@ -3,7 +3,7 @@ import AboutCards from "../components/AboutCards"
 
 const AboutMe = () => {
   return (
-	<div className="flex flex-col bg-green">
+	<div className="flex flex-col">
 		<ProfilePicAnimated />
 		<AboutCards />
 		<AboutCards />

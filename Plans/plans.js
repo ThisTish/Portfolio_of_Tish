@@ -167,6 +167,7 @@
 		//todo Hamburger menu for sm:
 			// *or icons-AboutMe, Portfolio, ContactMe, Resume
 		//todo circle icons for validating form infos
+		// todo Resume Download
 		// todo socials
 			// todo GitHub
 			// todo LinkedIn
