@@ -5,13 +5,13 @@ import { NavLink } from 'react-router-dom'
 
 
 const NavBar = () => {
-  // const  = ({isActive}) => isActive //?is not done, need it to show what is active.(want to do slider, gotta think about how)
+  // const  = ({isActive}) => isActive //?is not done, need it to show what is active.(want to do slider, gotta think about how) Circles around active?
 
   return (
-	<div className='bg-green w-screen'>
+	<div>
   
-    <nav>
-      <ul className="text-red font-semibold bg-yellow max-w-screen-md mx-auto justify-center space-x-20 rounded-full hidden md:flex">
+    <nav className="text-red rounded-tl-full rounded-bl-full font-semibold bg-yellow max-w-screen-md">
+      <ul className=' space-x-20 py-1 px-10 hidden md:flex' >
         {/* <icon for hamburger menu */}
         <NavLink to='/aboutMe' >AboutMe</NavLink> 
         <NavLink to='/portfolio' >Portfolio</NavLink> 

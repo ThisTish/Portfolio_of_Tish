@@ -18,7 +18,7 @@
 // !WHEN I view the navigation titles
 // !THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
 	// todo create links*:
-		// todo About Me Link
+		// // About Me Link
 		// todo Portfolio Link
 		// todo Contact Link
 		// todo Resume
@@ -31,12 +31,12 @@
 
 // !WHEN I click on a navigation title
 // !THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
-	// todo import and use NavLink package
-		// * <a> is <NavLink> and href="" is to=""
-		// *react-router
-		// *have to use react-router-dom
-		// 20-1-23-main.jsx
-		// *{ Outlet } is the component conditionally switches between routes/pages
+	// // import and use NavLink package
+		//// <a> is <NavLink> and href="" is to=""
+		////react-router
+		////have to use react-router-dom
+		//// 20-1-23-main.jsx
+		////{ Outlet } is the component conditionally switches between routes/pages
 // !WHEN I load the portfolio the first time
 // !THEN the About Me title and section are selected by default
 	// todo useEffect() 
@@ -48,7 +48,7 @@
 	// // create photo* graphic
 	// todo refine About me paragraph & sections
 	// // design AboutMe* section
-	// todo create AboutMe* section
+	// // create AboutMe* section
 
 // !WHEN I am presented with the Portfolio section
 // !THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository

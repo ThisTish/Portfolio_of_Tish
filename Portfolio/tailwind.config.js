@@ -10,9 +10,9 @@ export default {
       fontFamily: {
         sans: ['Roboto', 'sans-serif']
       },
-      gridTemplateColumns: {
-        '70/30': '70% 28%'
-      },
+      // gridTemplateColumns: {
+      //   '70/30': '70% 28%'
+      // },
       colors: {
         secondary: 'var(--secondary)',
         primary: 'var(--primary)',
