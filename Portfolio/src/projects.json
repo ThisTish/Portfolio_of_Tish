@@ -1,0 +1,17 @@
+[
+
+	{	"id": "1",
+		"title1": "In Or Out",
+		"description1":"Social Site for Gatherings",
+		"imgSrc1": "/assets/images/InOrOut.png",
+		"websiteLink1": "https://in-or-out-6n4t.onrender.com/",
+		"repoLink1": "https://github.com/Sean-K-Madigan/In-Or-Out", 
+
+		"title2": "In Or Out",
+		"description2":"Social Site for Gatherings",
+		"imgSrc2": "/assets/images/BlogologyPic.png",
+		"websiteLink2": "https://in-or-out-6n4t.onrender.com/",
+		"repoLink2": "https://github.com/Sean-K-Madigan/In-Or-Out"
+	}
+
+]

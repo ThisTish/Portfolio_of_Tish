@@ -10,6 +10,7 @@ import Resume from './pages/Resume.jsx'
 const router = createBrowserRouter (
   createRoutesFromElements(
     <Route path='/' element={<MainLayout />} >
+      <Route index element={<AboutMe />} />,
       <Route path='/aboutme' element={<AboutMe />} />
       <Route path='/portfolio' element={<Portfolio />} />
       <Route path='/contactme' element={<ContactMe />} />

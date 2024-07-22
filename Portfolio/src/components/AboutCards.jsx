@@ -1,7 +1,6 @@
 
-// *change border color? and where title is?
 // *animate so card come over each other in mobile
-// *Stagger cards like in mockup for md:
+
 const AboutCards = (title, content) => {
 	return (
 			<div className="container border-green border-8 space-y-3 px-3 pb-14 -mt-7 mx-auto rounded-3xl bg-highlight">

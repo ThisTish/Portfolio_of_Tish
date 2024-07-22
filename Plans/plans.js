@@ -17,17 +17,18 @@
 	
 // !WHEN I view the navigation titles
 // !THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
-	// todo create links*:
+	// // create links*:
 		// // About Me Link
 		// // Portfolio Link
 		// // Contact Link
 		// // Resume
-	// todo ternary() conditional statement to for background and/or other styles to stay in hover status by passing ({ isActive })
-	// * isActive ? className="text-white bg-black" : className="text-black bg-white"--can also make the classes a function/component
-	// todo make variable() and setVariable ({ isActive })
-		// *const [isActive, setIsActive] = useState(false)
-	// todo setVariable() when passing link
-		// * to="/" setIsActive(true)
+	// // ternary() conditional statement to for background and/or other styles to stay in hover status by passing ({ isActive })
+	//  //isActive ? className="text-white bg-black" : className="text-black bg-white"--can also make the classes a function/component
+	// no need for useState, isActive is native
+		//  make variable() and setVariable ({ isActive })
+			// const [isActive, setIsActive] = useState(false)
+		//  setVariable() when passing link
+			//  to="/" setIsActive(true)
 
 // !WHEN I click on a navigation title
 // !THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
@@ -39,9 +40,10 @@
 		////{ Outlet } is the component conditionally switches between routes/pages
 // !WHEN I load the portfolio the first time
 // !THEN the About Me title and section are selected by default
-	// todo useEffect() 
-		//* router option '/', aboutme
-		//  useEffect = '/AboutMe', []
+	// // useEffect() 
+		// path / element HomePage & AboutMe
+		// or index element={<aboutme />}
+		
 
 // !WHEN I am presented with the About Me section
 //! THEN I see a recent photo or avatar of the developer and a short bio about them
