@@ -7,13 +7,16 @@ import ContactMe from './pages/ContactMe.jsx'
 import Resume from './pages/Resume.jsx'
 
 
+const App = () => {
+
+
 const router = createBrowserRouter (
   createRoutesFromElements(
     <Route path='/' element={<MainLayout />} >
       <Route index element={<AboutMe />} />,
-      <Route path='/aboutme' element={<AboutMe />} />
+      <Route path='/about' element={<AboutMe />} />
       <Route path='/portfolio' element={<Portfolio />} />
-      <Route path='/contactme' element={<ContactMe />} />
+      <Route path='/contact' element={<ContactMe  />} />
       <Route path='/resume' element={<Resume />} />
 
     </Route>
@@ -22,7 +25,7 @@ const router = createBrowserRouter (
 
 
 
-const App = () => {
+
 
   return (
     <RouterProvider router={router} />
