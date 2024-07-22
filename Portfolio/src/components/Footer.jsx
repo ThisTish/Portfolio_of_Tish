@@ -1,17 +1,23 @@
+import { NavLink } from "react-router-dom"
+import logo from '../assets/images/logo.png'
+import { FaGithub, FaLinkedinIn, FaEnvelope, FaInstagram, FaTwitter } from 'react-icons/fa' 
+
 
 const Footer = () => {
 	return (
-		<div>
-			<footer className="bg-secondary max-w-screen">
-			<ul className="text-red font-semibold bg-yellow max-w-screen-md mx-auto justify-center space-x-20 rounded-full hidden md:flex">
-			{/* get icons for small screen */}
-					<a href="http://github.com/ThisTish"> Email </a> 
-					{/* embed email feature */}
-					<a href="http://github.com/ThisTish"> LinkedIn </a> 
-					<a href="http://github.com/ThisTish"> Instagram </a> 
-					<a href="http://github.com/ThisTish"> Twitter </a> 
-					<a href="http://github.com/ThisTish"> GitHub </a> 
-				</ul>
+		<div className="bg-secondary  flex mt-auto">
+			<footer className="flex justify-start">
+				<NavLink to='/aboutme'>
+					<img src={ logo } className='h-10 w-auto md:h-20' alt='TS-Tish Sirface Initials' />
+				</NavLink>
+				<div className="text-red w-64 pl-10 pr-5 font-sans bg-yellow rounded-tr-full rounded-br-full flex justify-between">
+					<a href= ""className="mt-1"><FaInstagram /></a>
+					<a href= ""className="mt-4"><FaTwitter  /></a>
+					<a href= ""className="mt-2"><FaEnvelope /></a>
+					<a href= ""className="mt-5"><FaLinkedinIn /></a>
+					<a href= ""className="mt-3"><FaGithub /></a>
+				</div>
+
 			</footer>
 		</div>
 	)

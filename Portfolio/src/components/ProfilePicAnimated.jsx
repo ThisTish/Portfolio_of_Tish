@@ -6,18 +6,10 @@ function ProfilePicAnimated() {
 
 	return (
 		<>
-			<div>
-				<video width="600" autoPlay muted>
+			<div className='mx-auto mb-7'>
+				<video autoPlay muted>
 					<source src={profilePic} type='video/mp4'/>
 				</video>
-
-				<div className="w-10 h-10 bg-primary"></div>
-				<div className="w-10 h-10 bg-secondary"></div>
-				<div className="w-10 h-10 bg-green"></div>
-				<div className="w-10 h-10 bg-yellow"></div>
-				<div className="w-10 h-10 bg-red"></div>
-				<div className="w-10 h-10 bg-highlight"></div>
-				<div className="w-10 h-10 bg-shadow"></div>
 			</div>
 		</>
 	)

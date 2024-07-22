@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
 
 	/* colors */
@@ -14,8 +15,10 @@
 	--highlight: #F2F2F2;
 	--shadow: #464646;
 	}
+}
+
 	/* not quite here yet. need more tailwind config for this. might change to secondary palette */
-	body.dark-mode{
+	/* body.dark-mode{
 		--primary: #003B4A;
 		--secondary: #B8DED5;
 		--green: #8EA66A;
@@ -23,12 +26,22 @@
 		--red: #BF5349;
 		--shadow: #F2F2F2;
 		--highlight: #464646;
-	}
-}
+	} */
 
-body {
-	background-color: var(--primary);
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		@apply font-mono
+	
+	}
+	
+	#root {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+	
+	h1,h2,h3,h4,h5 {
+		@apply font-sans
+	}
