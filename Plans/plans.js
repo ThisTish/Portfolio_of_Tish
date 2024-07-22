@@ -57,12 +57,15 @@
 	// todo design PORTFOLIO component
 		// // mobile design
 		// todo desktop design
-	// todo create PORTFOLIO component
+	// // create PORTFOLIO component
 		// // design PROJECT simple description
 		// // design PROJECTCARD components
 			// // Title
 			// // Image
-				// *create professional images matching tone- className="grayscale hover:grayscale-0"
+				// create professional images matching tone- className="grayscale hover:grayscale-0"
+		// todo fill out json file
+			// todo title
+			// todo imgs
 			// todo Links
 				// todo Deployed Site
 				// todo GitHub site
@@ -78,13 +81,14 @@
 		// // input for Message
 			// // functions useStates() for input.value
 		// // Submit Button
-		// ? Cancel Button
+		// Cancel Button
 	// // create FORM component
-	// *add accent-* to show when active, and when completed?
 
 // !WHEN I move my cursor out of one of the form fields without entering text
 // !THEN I receive a notification that this field is required
 	// ? create If() statement using useState('')
+	// *add accent-* to show when active, and when completed?
+
 
 // !WHEN I enter text into the email address field
 // !THEN I receive a notification if I have entered an invalid email address
@@ -95,7 +99,8 @@
 // !THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 	// // design RESUME component
 	// todo create link for resume to be downloaded
-	// todo create Proficiencies*
+	// todo create Proficiencies
+		// todo more icons-fa did not have all i want
 
 // !WHEN I view the footer
 // !THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
@@ -105,21 +110,33 @@
 		////react-fa-icons?
 
 
+		// todo list for 7/22: 
+			// *contact form
+				// *how to handle
+				// *how to alert for required fields
+				// *how to validate email
+			// *md: & lg: style
+			// * content
+				// *project.json file
+				// *aboutMe
+			// *more icons
+
 // *COMPONENTS
 	// / HEADER
 		// / NAVBAR
 	// / CONTENT
 		// / HERO W/ NAME
 	// TODO ABOUTME
-		// TODO PHOTO
+		// // PHOTO
 		// TODO DESCRIPTION
-	// TODO PORTFOLIO
-		// TODO PROJECTCARDS
+	// // PORTFOLIO
+		// // PROJECTCARDS
 	// TODO RESUME
-		// TODO RESUME MODAL w/ link to googleDocs link for download? or just clickable link for download
+		// // RESUME
+		// // link for download
 		// TODO PROFICIENCIES
 	// // FOOTER
-	// TODO CONTACT
+	// // CONTACT
 
 // *DESIGN
 	// // wholePage
@@ -198,7 +215,7 @@
 
 //*FUNCTIONS
 	// TODO USESTATES
-		// todo for isActive
+		// // for isActive
 		// todo form inputs
 			// todo required fields 
 			// todo verify email
