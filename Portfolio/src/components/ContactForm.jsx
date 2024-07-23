@@ -1,10 +1,13 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
+import emailjs from '@emailjs/browser'
+
 // use state for fields being left empty when cursor leaves 'onFocus'
 // onFocus(setInputStatus)
 
 
-const ContactForm = ({submitContactMessage}) => {
+const ContactForm = () => {
 
+	const form = useRef()
 
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
@@ -13,18 +16,30 @@ const ContactForm = ({submitContactMessage}) => {
 	const sendMessage = (event) => {
 		event.preventDefault()
 
+		console.log(name, email, message)
+		
+		emailjs.sendForm('service_1r1l9yt', '1234555', form.current, {
+			publicKey: '6LX2y83yrD4iURq21'
+		}).then(() =>{
+			console.log(`success!`)
+		},
+		(error) =>{
+			console.log('Failed', error.text)
+		}
+		)
+
 		const newMessage = {
 			name,
 			email,
 			message
 		}
-		submitContactMessage(newMessage)
+		console.log(newMessage)
 	}
 
 	return (
 		<div className="flex flex-col my-10">
 			{/* react19? actions? */}
-			<form onSubmit={sendMessage} className="space-y-10 flex flex-col items-end">
+			<form ref={form} onSubmit={sendMessage}  className="space-y-10 flex flex-col items-end">
 				<div>
 					<label className="text-secondary font-light" htmlFor="name">Name</label>
 					<input 

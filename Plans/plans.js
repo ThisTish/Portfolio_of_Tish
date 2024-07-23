@@ -113,13 +113,20 @@
 		// todo list for 7/22: 
 			// *contact form
 				// *how to handle
-				// *how to alert for required fields
+				// *how to alert for required fields (react-toastify)
 				// *how to validate email
-			// *md: & lg: style
 			// * content
 				// *project.json file
 				// *aboutMe
+			// *md: & lg: style
+				// *take grey border off of skills box
+				// *ease in on hovers
 			// *more icons
+			// *email links
+			// *loaders(react-spinners)
+			// *404
+
+		// ! when loading, AboutMe link isn't active.
 
 // *COMPONENTS
 	// / HEADER
