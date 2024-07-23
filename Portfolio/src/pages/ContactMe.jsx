@@ -4,32 +4,6 @@ const ContactMe = () => {
 	
 // use state for message status
 
-	// emailjs.init('6LX2y83yrD4iURq21', {
-	// })
-	
-	// const submitMessage = async ({newMessage}) => {
-	// 	const {name, email, message} = newMessage
-	// 	console.log(name, email, message)
-		
-	// 	const emailContent = {
-	// 		from_name: name,
-	// 		from_email: email,
-	// 		message
-	// 	}
-	
-	// // const sendingEmail = async (email) =>{
-	// 	try{
-	// 		const res = await emailjs.send('6LX2y83yrD4iURq21', '1234555', emailContent)
-	// 		if(res.status === 200 || res.text === 'OK'){
-	// 				console.log(`Success! I look forward to hearing from you!`)
-	// 			}else{
-	// 				console.log(`There seems to be an error`)
-	// 			}
-	// 		}catch(error){
-	// 			console.log(`Something wrong happened`, error)
-	// 		}
-	// 	// }
-	// }
 
 	return (
 		<div >

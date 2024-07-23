@@ -13,7 +13,8 @@ const App = () => {
 const router = createBrowserRouter (
   createRoutesFromElements(
     <Route path='/' element={<MainLayout />} >
-      <Route index element={<AboutMe />} />,
+      {/* how does isActive work, so it will highlight in tool bar */}
+      <Route index element={<AboutMe isActive={true} />} />,
       <Route path='/about' element={<AboutMe />} />
       <Route path='/portfolio' element={<Portfolio />} />
       <Route path='/contact' element={<ContactMe  />} />

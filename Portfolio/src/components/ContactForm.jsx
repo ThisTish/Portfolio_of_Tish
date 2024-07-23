@@ -4,7 +4,6 @@ import emailjs from '@emailjs/browser'
 // use state for fields being left empty when cursor leaves 'onFocus'
 // onFocus(setInputStatus)
 
-
 const ContactForm = () => {
 
 	const form = useRef()
@@ -17,9 +16,8 @@ const ContactForm = () => {
 		event.preventDefault()
 
 		console.log(name, email, message)
-		
-		emailjs.sendForm('service_1r1l9yt', '1234555', form.current, {
-			publicKey: '6LX2y83yrD4iURq21'
+		emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
+			publicKey: import.meta.env.VITE_PUBLIC_KEY
 		}).then(() =>{
 			console.log(`success!`)
 		},
@@ -38,7 +36,6 @@ const ContactForm = () => {
 
 	return (
 		<div className="flex flex-col my-10">
-			{/* react19? actions? */}
 			<form ref={form} onSubmit={sendMessage}  className="space-y-10 flex flex-col items-end">
 				<div>
 					<label className="text-secondary font-light" htmlFor="name">Name</label>
