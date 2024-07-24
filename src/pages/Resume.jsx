@@ -4,7 +4,6 @@ import Education from '../components/Resume/Education'
 import Projects from '../components/Resume/Projects'
 import Skills from '../components/Resume/Skills'
 import WorkExperience from '../components/Resume/WorkExperience'
-import resume from '/assets/files/Tisha_Sirface_Web_Development_Resume.pdf'
 
 
 const Resume = () => {
@@ -23,7 +22,7 @@ const Resume = () => {
 				<p className='-ml-3 -mt-5'>For more</p>
 				<p className=' -mt-6'> details...</p>
 				</div>
-				<a href='/assets/files/Tisha_Sirface_Web_Development_Resume.pdf' download={resume}>
+				<a href='/assets/files/Tisha_Sirface_Web_Development_Resume.pdf' download='Tish_Sirface-Web_Development_Resume.pdf'>
 					<button className='bg-red text-highlight rounded-tl-full rounded-bl-full py-3 px-1 [text-shadow:_-2px_4px_0_var(--shadow)]'>
 						Download Resume Here
 					</button>
