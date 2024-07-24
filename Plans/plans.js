@@ -115,10 +115,10 @@
 
 		// todo list for 7/23: 
 			// *contact form
-				// add contact info
+				//* add contact info
 				// //how to handle
-				// *how to alert for required fields (react-toastify)
-				// *how to validate email
+				// //how to alert for required fields (react-toastify)
+				// //how to validate email
 			// * content
 				// *project.json file
 				// *aboutMe
@@ -227,13 +227,13 @@
 		
 
 //*FUNCTIONS
-	// TODO USESTATES
+	// // USESTATES
 		// // for isActive
-		// todo form inputs
-			// todo required fields 
-			// todo verify email
-	// TODO USEEFFECTS
-		// todo load on aboutMe
-		// todo project display section
+		// // form inputs
+			// // required fields 
+			// // verify email
+	// // USEEFFECTS
+		// // load on aboutMe
+		// // project display section
 
 //! HAVE FUN, STAY CALM, MAKE IT ME
