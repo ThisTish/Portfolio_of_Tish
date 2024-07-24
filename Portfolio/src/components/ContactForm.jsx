@@ -6,17 +6,81 @@ import emailjs from '@emailjs/browser'
 
 const ContactForm = () => {
 
+
+	
+
 	const form = useRef()
 
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
 	const [message, setMessage] = useState('')
+	const [nameError, setNameError] = useState('')
+	const [emailError, setEmailError] = useState('')
+	const [messageError, setMessageError] = useState('')
+
+	const [color, setColor] = useState('primary')
+	const [validEmail, setValidEmail] = useState(true)
+
+
+
+	const handleInput = (event) => {
+
+		const {name, value} = event.target
+			if(!value){
+				switch(name){
+					case "name":
+						setNameError('FieldRequired')
+						setColor('border-red')
+						break
+					case "email":
+						setEmailError('FieldRequired')
+						setColor('border-red')
+						break
+					case "message":
+						setMessageError('FieldRequired')
+						setColor('border-red')
+						break
+						default:
+							break
+				}
+			
+			}else{
+				switch(name){
+					case "name":
+						setNameError('')
+						setColor('border-primary')
+						break
+					case "email":
+						setEmailError('')
+						setColor('border-primary')
+						break
+					case "message":
+						setMessageError('')
+						setColor('border-primary')
+						break
+						default:
+							break
+				}
+				
+			}
+			if(name === "email" && value){
+				if (!(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/).test(value)){
+					setValidEmail(false)
+					setEmailError('Valid Email Required')
+				}else{
+					setEmailError('')
+				}
+			
+		}
+	}
 
 	const sendMessage = (event) => {
-		event.preventDefault()
 
-		console.log(name, email, message)
-		emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
+		event.preventDefault()
+		// emailjs functions
+		emailjs.sendForm(
+			import.meta.env.VITE_SERVICE_ID, 
+			import.meta.env.VITE_TEMPLATE_ID, form.current, {
 			publicKey: import.meta.env.VITE_PUBLIC_KEY
 		}).then(() =>{
 			console.log(`success!`)
@@ -31,7 +95,6 @@ const ContactForm = () => {
 			email,
 			message
 		}
-		console.log(newMessage)
 	}
 
 	return (
@@ -43,11 +106,13 @@ const ContactForm = () => {
 					type="text" 
 					id="name" 
 					name="name" 
-					className=" max-w-48 text-shadow rounded-full border-yellow border-4 p-2"
+					className="max-w-48 rounded-full border-yellow border-4 p-2 text-secondary focus:color"
 					required
 					value={name}
 					onChange={(event) => setName(event.target.value)}
+					onBlur={handleInput}
 					/>
+					{nameError && <p className="text-red text-xs">{nameError}</p>}
 				</div>
 
 				<div>
@@ -56,11 +121,15 @@ const ContactForm = () => {
 					type="text" 
 					id="email" 
 					name="email" 
-					className="text-shadow rounded-full bg-primary border-highlight border-4 mr-2 w-60 px-2" 
+					className="rounded-full bg-primary border-highlight border-4 mr-2 w-60 px-2 text-secondary focus:color" 
 					required
 					value={email}
 					onChange={(event) => setEmail(event.target.value)}
+					onBlur={handleInput}
+
 					/>
+					{emailError && <p className="text-red text-xs">{emailError}</p>}
+
 				</div>
 
 				<div>
@@ -68,11 +137,15 @@ const ContactForm = () => {
 					<textarea 
 					name="message" 
 					id="message" 
-					className="text-shadow rounded-3xl h-32 w-72 border-8 border-green p-3"
+					className="rounded-3xl h-32 w-72 border-8 border-green p-3 text-secondary focus:color"
 					required
 					value={message}
 					onChange={(event) => setMessage(event.target.value)}
+					onBlur={handleInput}
+
 					></textarea>
+					{messageError && <p className="text-red text-xs">{messageError}</p>}
+
 				</div>
 
 				<div className="h-20 flex justify-between relative">

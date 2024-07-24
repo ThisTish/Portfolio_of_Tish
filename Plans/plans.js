@@ -4,7 +4,7 @@
 // !WHEN I load the portfolio
 // !THEN I am presented with a page containing a header, a section for content, and a footer
 	// todo deploy to Netlify
-	// todo App.jsx file:
+	// // App.jsx file:
 		// // HEADER components
 		// // CONTENT SECTION components
 		// // FOOTER components
@@ -87,6 +87,7 @@
 // !WHEN I move my cursor out of one of the form fields without entering text
 // !THEN I receive a notification that this field is required
 	// ? create If() statement using useState('')
+		// *isFocused
 	// *add accent-* to show when active, and when completed?
 
 
@@ -99,6 +100,8 @@
 // !THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 	// // design RESUME component
 	// todo create link for resume to be downloaded
+		// todo button for pdf
+		// todo button for word
 	// todo create Proficiencies
 		// todo more icons-fa did not have all i want
 
@@ -110,9 +113,10 @@
 		////react-fa-icons?
 
 
-		// todo list for 7/22: 
+		// todo list for 7/23: 
 			// *contact form
-				// *how to handle
+				// add contact info
+				// //how to handle
 				// *how to alert for required fields (react-toastify)
 				// *how to validate email
 			// * content
@@ -120,11 +124,13 @@
 				// *aboutMe
 			// *md: & lg: style
 				// *take grey border off of skills box
-				// *ease in on hovers
+				// *ease in on hovers-nav bar
 			// *more icons
-			// *email links
+			// //email links
 			// *loaders(react-spinners)
 			// *404
+
+			// *make nav bar slider
 
 		// ! when loading, AboutMe link isn't active.
 
