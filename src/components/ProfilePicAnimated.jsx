@@ -6,7 +6,8 @@ function ProfilePicAnimated() {
 
 	return (
 		<>
-			<div className='mx-auto mb-7'>
+		{/* add loader */}
+			<div className='mx-auto rounded-3xl overflow-hidden z-10 mb-7 sm:w-64 md:w-72 lg:w-96 '>
 				<video autoPlay muted>
 					<source src={profilePic} type='video/mp4'/>
 				</video>

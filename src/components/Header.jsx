@@ -3,7 +3,8 @@ import NavBar from "./NavBar"
 
 const Header = () => {
   return (
-	<div className="flex bg-green relative">
+	<div className="flex bg-secondary
+	 relative">
 		<Hero />
 		<NavBar />
 	</div>

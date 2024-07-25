@@ -3,7 +3,7 @@
 //!GIVEN a single-page application portfolio for a web developer
 // !WHEN I load the portfolio
 // !THEN I am presented with a page containing a header, a section for content, and a footer
-	// todo deploy to Netlify
+	// // deploy to Netlify
 	// // App.jsx file:
 		// // HEADER components
 		// // CONTENT SECTION components
@@ -113,7 +113,7 @@
 		////react-fa-icons?
 
 
-		// todo list for 7/23: 
+		// todo list for 7/24: 
 			// *contact form
 				//* add contact info
 				// //how to handle
@@ -195,10 +195,10 @@
 		// ? background images/floofy
 
 	// *ICON
-		// ?odo Hamburger menu for sm:
-		// ?	*or icons-AboutMe, Portfolio, ContactMe, Resume
+		// //odo Hamburger menu for sm:
+		////or icons-AboutMe, Portfolio, ContactMe, Resume
 		//todo circle icons for validating form infos
-		//? Resume Download
+		//? Resume Download pdf or doc
 		// // socials
 			// // GitHub
 			// // LinkedIn
