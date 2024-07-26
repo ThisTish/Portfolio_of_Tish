@@ -26,6 +26,7 @@ const AboutMe = () => {
 				<h3 className="text-red text-xl font-bold flex justify-end py-5">gratitudeThings</h3>
 				<p className="text-secondary px-5 font-semibold">
 					let loves = &#123;
+				</p>
 					<ul>
 						<li>&nbsp;&nbsp;&nbsp;&nbsp;pets: &#123;
 							<ul>
@@ -58,7 +59,6 @@ const AboutMe = () => {
 						<li>&nbsp;&nbsp;&nbsp;&nbsp;concerts,</li>
 						<li>&nbsp;&nbsp;&nbsp;&nbsp;reading</li>
 					</ul>
-				</p>
 			</div>
 
 		{/* random facts */}
@@ -75,6 +75,7 @@ const AboutMe = () => {
 				<h3 className="text-red text-xl font-bold flex justify-end py-5">learningGoals</h3>
 				<p className="text-secondary px-5 font-semibold">
 					let furtherStudies = &#123;
+				</p>
 					<ul>
 						<li>&nbsp;&nbsp;&nbsp;&nbsp;knit,</li>
 						<li>&nbsp;&nbsp;&nbsp;&nbsp;Italian,</li>
@@ -93,7 +94,6 @@ const AboutMe = () => {
 						<li>&#125;</li>
 
 					</ul>
-				</p>
 			</div>
 		</div>
 	)

@@ -3,19 +3,19 @@
 const ProjectCards = ({project}) => {
   // const project = projects.project
   return (
-    <section className='px-4 space-y-9 mt-16 flex flex-col items-center justify-center'>
+    <section className='px-4 space-y-32 mt-32 flex flex-col items-center justify-center md:flex-row md:justify-around md:items-stretch lg:m-32 lg:space-y-48'>
       {/* first card */}
       <div className="flex">
       
-        <div className="text-secondary flex flex-col mt-16 -mr-16 z-10">
-          <h4 className=" font-extrabold text-sm m-1">{project.title1}</h4>
-          <p className="text-xs font-bold ">{project.description1}</p>
+        <div className="text-secondary flex flex-col mt-20 -mr-12 z-10 lg:mt-48">
+          <h4 className=" font-extrabold text-sm m-1 md:text-lg md:mr-5 lg:text-2xl">{project.title1}</h4>
+          <p className="text-xs font-bold md:text-base lg:text-xl ">{project.description1}</p>
         </div>
-      <div className="bg-yellow w-32 h-32 rounded-full">
-          <img src={project.imgSrc1} className='w-20 h-20 rounded-full grayscale brightness-150 hover:brightness-100 hover:grayscale-0 transition duration-300 ease-in-out' />
+      <div className="bg-yellow w-32 h-32 rounded-full md:min-w-48 md:h-48 lg:min-w-72 lg:h-72">
+          <img src={project.imgSrc1} className='w-24 h-24 rounded-full grayscale brightness-100 hover:brightness-100 hover:grayscale-0 transition duration-300 ease-in-out md:w-32 md:h-32 lg:min-w-48 lg:h-48 ' />
       </div>
 
-        <div className="text-red text-sm font-bold flex flex-col items-end -ml-12">
+        <div className="text-red text-sm font-bold flex flex-col items-end -ml-8 md:text-lg lg:text-2xl">
             <a  className="font-sans tracking-wide"href={project.websiteLink1}>Website</a>
             <a  className="font-sans tracking-wide"href={project.repoLink1}>Repo</a>
 
@@ -25,18 +25,18 @@ const ProjectCards = ({project}) => {
       {/* 2nd card (mirrored) */}
       <div className='flex'>
 
-      <div className="text-red text-sm font-bold flex flex-col justify-end -mr-12 z-10">
+      <div className="text-red text-sm font-bold flex flex-col justify-end -mr-8 z-10 md:text-lg lg:text-2xl">
             <a  className="font-sans tracking-wide"href={project.repoLink2}>Repo</a>
           <a  className="font-sans tracking-wide"href={project.websiteLink2}>Website</a>
         </div>
 
-        <div className="bg-green w-32 h-32 rounded-full flex justify-end items-end">
-          <img src={project.imgSrc2} className='w-20 h-20 rounded-full grayscale brightness-150 hover:brightness-100 hover:grayscale-0 transition duration-300 ease-in-out' />
+        <div className="bg-green w-32 h-32 rounded-full flex justify-end items-end md:min-w-48 md:h-48 lg:min-w-72 lg:h-72">
+          <img src={project.imgSrc2} className='w-24 h-24 rounded-full grayscale brightness-90 hover:brightness-100 hover:grayscale-0 transition duration-300 ease-in-out md:w-32 md:h-32 lg:min-w-48 lg:h-48' />
         </div>
 
-        <div className="text-secondary flex flex-col mt-5 items-end -ml-26 ">
-          <p className="text-xs font-semibold">{project.description2}</p>
-          <h4 className=" font-extrabold text-sm m-1">{project.title2}</h4>
+        <div className="text-secondary flex flex-col md:text-end mt-5 ">
+          <p className="text-xs font-semibold md:text-base lg:text-xl">{project.description2}</p>
+          <h4 className=" font-extrabold text-sm m-1 md:text-lg lg:text-2xl">{project.title2}</h4>
         </div>
 
       </div>

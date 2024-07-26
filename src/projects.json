@@ -2,16 +2,42 @@
 
 	{	"id": "1",
 		"title1": "In Or Out",
-		"description1":"Social Site for Gatherings",
+		"description1":"A site to plan gatherings with friends",
 		"imgSrc1": "/assets/images/InOrOut.png",
 		"websiteLink1": "https://in-or-out-6n4t.onrender.com/",
 		"repoLink1": "https://github.com/Sean-K-Madigan/In-Or-Out", 
 
-		"title2": "In Or Out",
-		"description2":"Social Site for Gatherings",
+		"title2": "Blogology 2.0",
+		"description2":"A little blog to share tech ideas",
 		"imgSrc2": "/assets/images/BlogologyPic.png",
-		"websiteLink2": "https://in-or-out-6n4t.onrender.com/",
-		"repoLink2": "https://github.com/Sean-K-Madigan/In-Or-Out"
+		"websiteLink2": "https://blogology2-0.onrender.com/",
+		"repoLink2": "https://github.com/ThisTish/Blogology2.0"
+	},
+	{	"id": "2",
+		"title1": "Movies & Munchies",
+		"description1":"Plan a night in with movie & food",
+		"imgSrc1": "/assets/images/MoviesMunchies.png",
+		"websiteLink1": "https://thistish.github.io/Movies-n-Munchies/",
+		"repoLink1": "https://github.com/ThisTish/Movies-n-Munchies", 
+
+		"title2": "Checking the Weather",
+		"description2":"Get the weather for your city",
+		"imgSrc2": "/assets/images/CheckingWeather.png",
+		"websiteLink2": "https://thistish.github.io/Checking_the_Weather/",
+		"repoLink2": "https://github.com/ThisTish/Checking_the_Weather"
+	},
+	{	"id": "3",
+		"title1": "Blogology",
+		"description1":"Locally saved blog site",
+		"imgSrc1": "/assets/images/BlogologyDark.png",
+		"websiteLink1": "https://thistish.github.io/Blogology/",
+		"repoLink1": "https://github.com/ThisTish/Blogology", 
+
+		"title2": "Task Master",
+		"description2":"Simple Kanban board for tasks",
+		"imgSrc2": "/assets/images/TaskMaster.png",
+		"websiteLink2": "https://thistish.github.io/Task-Master/",
+		"repoLink2": "https://github.com/ThisTish/Task-Master?tab=readme-ov-file"
 	}
 
 ]
