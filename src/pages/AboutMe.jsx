@@ -4,7 +4,7 @@ const AboutMe = () => {
 	
 	return (
 		<div className="flex flex-col mb-5">
-			{/* <h2 className="text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)]  mx-3 md:mx-10 md:text-end md:my-20"></h2> */}
+			<h2 className="text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] hidden md:block mx-3 my-1 lg:m-16 lg:text-end md:text-5xl lg:text-7xl">About Me</h2>
 			<div className="flex flex-col-reverse sm:flex-row md:mt-14 md:items-center">
 				{/* about me */}
 				<div className="container border-green border-8 space-y-3 px-3 pb-14 -mt-10 mx-auto rounded-br-3xl rounded-bl-3xl border-t-0 bg-highlight max-w-96 md:border-t-8 md:rounded-3xl ">
