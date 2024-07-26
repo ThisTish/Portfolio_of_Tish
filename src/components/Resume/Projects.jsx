@@ -1,40 +1,50 @@
 import React from 'react'
 
 const Projects = () => {
+
+    const projects = [
+      {
+        title: "In Or Out",
+        languages: "JavaScript | SQL | Express.js | RESTful API",
+        description: "Social site for friends and their activities"
+      }, 
+      {
+        title: "Blogology 2.0",
+        languages: "Sequelize | Handlebars | Tailwind | Node.js",
+        description: "Sleek and simple technology blog"
+      },
+      {
+        title: "Movies & Munchies",
+        languages: "GitHub Projects | Third-Party API | HTML | JS",
+        description: "A site for planning a night of food & movies"
+      }
+
+    ]
+
   return (
-  <div className="container border-highlight bg-primary border-8 w-fit space-y-3 px-3 pb-14 -mt-7 -mr-8 ml-6 rounded-3xl ">
+
+
+  <div className=" border-highlight bg-primary border-8 w-fit space-y-3 pb-14 -mt-10 -mr-8 ml-6 rounded-3xl md:-mt-5 md:px-20 ">
     <h3 className="text-red text-2xl font-sans mr-5 -mt-3 flex flex-col items-end">(projects)</h3>
-    <div className="mr-5 space-y-5">
+    <div className=" space-y-10 text-center px-10 py-7">
+
+    { projects.map((project) =>(
+					
+			
       
-      <div className="mr-5 text-secondary space-y-2">
-        <h4 className='font-sans font-lg '><a href='https://in-or-out-6n4t.onrender.com/'>In  Or Out</a></h4>
+      <div className=" text-secondary space-y-2">
+        <h4 className='font-sans font-xl '><a href='https://in-or-out-6n4t.onrender.com/'>{project.title}</a></h4>
         <p className=" font-light tracking-tight text-sm">
-          JavaScript | SQL | Express.js | RESTful API
+          {project.languages}
         </p>
         <p className=" font-semibold text-sm">
-          Social site for friends and their activities
+          {project.description}
         </p>
       </div>
+        ) 
+      )}
+      
 
-      <div className="mr-5 text-secondary space-y-2">
-        <h4 className='font-sans font-lg '><a href='https://github.com/ThisTish/Blogology2.0'>Blogology 2.0</a></h4>
-        <p className=" font-light tracking-tight text-sm">
-        Sequelize | Handlebars | Tailwind | Node.js
-        </p>
-        <p className=" font-semibold text-sm">
-          Sleek and simple technology blog
-        </p>
-      </div>
-
-      <div className="mr-5 text-secondary space-y-2">
-        <h4 className='font-sans font-lg '><a href='https://thistish.github.io/Movies-n-Munchies/'>Movies & Munchies</a></h4>
-        <p className=" font-light tracking-tight text-sm">
-        GitHub Projects | Third-Party API | HTML | JS
-        </p>
-        <p className=" font-semibold text-sm">
-          A site for planning a night of food & movies
-        </p>
-      </div>
   </div>
 </div>
   )

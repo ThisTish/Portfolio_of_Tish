@@ -98,7 +98,7 @@ const ContactForm = () => {
 	}
 
 	return (
-		<div className="flex flex-col my-10">
+		<div className="flex flex-col m-16">
 			<form ref={form} onSubmit={sendMessage}  className="space-y-10 flex flex-col items-end">
 				<div>
 					<label className="text-secondary font-light" htmlFor="name">Name</label>
