@@ -23,7 +23,7 @@ const Skills = () => {
             <Icon key={index} className={`inline m-1 text-7xl ${className}`} />
           ))}
 			</div>
-				<div className='md:flex flex-col absolute right-0 space-y-10 hidden'>
+				<div className='md:flex flex-col mt-60 mx-36 space-y-12 hidden'>
           {icons.map(({ component: Icon, className}, index) =>(
             <Icon key={index} className={`inline m-1 text-7xl ${className}`} />
           ))}

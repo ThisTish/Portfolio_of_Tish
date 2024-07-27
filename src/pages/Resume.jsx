@@ -9,20 +9,20 @@ import WorkExperience from '../components/Resume/WorkExperience'
 const Resume = () => {
 	return (
 		<div>
-			<h2 className="text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] mx-3 my-1 md:text-5xl lg:m-16 lg:text-7xl">Resume</h2>
+			<h2 className="text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] mx-3 my-1 md:text-5xl lg:m-16 lg:text-7xl lg:text-end">Resume</h2>
 			<div className='md:flex'>
 				<NameDetails />
 			<	CareerObjective />
 			</div>
-			<div className='md:flex justify-center items-center'>
+			<div className='md:flex items-end'>
 				<Education />
 				<Projects />
 			</div>
-			<div className='md:flex'>
-				<WorkExperience />
+			<div className='flex flex-col-reverse md:flex-row md:mt-20 justify-between lg:justify-around lg:mt-'>  
 				<Skills />
+				<WorkExperience />
 			</div>
-			<div className="justify-center flex mb-20 md:absolute md:top-1/4 md:right-0">
+			<div className="flex mb-28 justify-center md:justify-end md:-mt-16 md:mr-24 ">
 			{/* <div className="flex justify-between text-secondary mx-6 my-7 py-2 text-xl font-sans bg-yellow max-w-sm md:-mr-1"> */}
 				{/* <div className='flex flex-col space-y-2'>
 				<p className='-ml-3 -mt-5'>For more</p>
@@ -33,12 +33,13 @@ const Resume = () => {
 						Download Resume 
 					</button>
 				</a> */}
+			
 				<a href='/files/Tisha_Sirface_Web_Development_Resume.pdf' download='Tish_Sirface-Web_Development_Resume.pdf'>
-					<button className='bg-red font-sans text-xl text-center text-highlight shadow-md shadow-secondary rounded-full p-5 [text-shadow:_-2px_4px_0_var(--shadow)]'>
+					<button className='bg-red font-sans text-xl text-center text-highlight shadow-md shadow-secondary rounded-full p-5 [text-shadow:_-2px_4px_0_var(--shadow)] lg:text-4xl'>
 						Download Full Resume 
 					</button>
 				</a>
-				{/* </div> */}
+			
 			</div>
 		</div>
 	)

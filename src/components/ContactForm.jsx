@@ -98,15 +98,15 @@ const ContactForm = () => {
 	}
 
 	return (
-		<div className="flex flex-col m-16">
-			<form ref={form} onSubmit={sendMessage}  className="space-y-10 flex flex-col items-end">
+		<div className="flex flex-col my-24 ">
+			<form ref={form} onSubmit={sendMessage}  className="space-y-10 flex flex-col items-end lg:text-xl">
 				<div>
 					<label className="text-secondary font-light" htmlFor="name">Name</label>
 					<input 
 					type="text" 
 					id="name" 
 					name="name" 
-					className="max-w-48 rounded-full border-yellow border-4 p-2 text-secondary focus:color"
+					className="max-w-48 rounded-full border-yellow border-4 p-2 text-secondary focus:color lg:max-w-52"
 					required
 					value={name}
 					onChange={(event) => setName(event.target.value)}
@@ -121,7 +121,7 @@ const ContactForm = () => {
 					type="text" 
 					id="email" 
 					name="email" 
-					className="rounded-full bg-primary border-highlight border-4 mr-2 w-60 px-2 text-secondary focus:color" 
+					className="rounded-full bg-primary border-highlight border-4 mr-2 w-60 px-2 text-secondary focus:color lg:w-72" 
 					required
 					value={email}
 					onChange={(event) => setEmail(event.target.value)}
@@ -137,7 +137,7 @@ const ContactForm = () => {
 					<textarea 
 					name="message" 
 					id="message" 
-					className="rounded-3xl h-32 w-72 border-8 border-green p-3 text-secondary focus:color"
+					className="rounded-3xl h-32 w-72 border-8 border-green p-3 text-secondary focus:color lg:min-w-96 lg:h-52"
 					required
 					value={message}
 					onChange={(event) => setMessage(event.target.value)}
@@ -148,7 +148,7 @@ const ContactForm = () => {
 
 				</div>
 
-				<div className="h-20 flex justify-between relative">
+				<div className="h-20 flex relative">
 					{/* bubbles */}
 					<div className="bg-yellow w-5 h-5 rounded-full absolute bottom-3"></div>
 					<div className="bg-shadow w-7 h-7 rounded-full absolute right-0"></div>
@@ -158,7 +158,7 @@ const ContactForm = () => {
 					<div className="bg-secondary w-5 h-5 rounded-full absolute top-2 right-20 "></div>
 
 
-					<button type="submit" className="bg-red rounded-full px-5" > Send! </button>
+					<button type="submit" className="bg-red rounded-full px-5 text-highlight font-bold [text-shadow:_-2px_4px_0_var(--shadow)] " > Send </button>
 				</div>
 			</form>
 		</div>
