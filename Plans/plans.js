@@ -48,28 +48,28 @@
 // !WHEN I am presented with the About Me section
 //! THEN I see a recent photo or avatar of the developer and a short bio about them
 	// // create photo* graphic
-	// todo refine About me paragraph & sections
+	// // refine About me paragraph & sections
 	// // design AboutMe* section
 	// // create AboutMe* section
 
 // !WHEN I am presented with the Portfolio section
 // !THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
-	// todo design PORTFOLIO component
+	// // design PORTFOLIO component
 		// // mobile design
-		// todo desktop design
+		// // desktop design
 	// // create PORTFOLIO component
 		// // design PROJECT simple description
 		// // design PROJECTCARD components
 			// // Title
 			// // Image
 				// create professional images matching tone- className="grayscale hover:grayscale-0"
-		// todo fill out json file
-			// todo title
-			// todo imgs
-			// todo Links
-				// todo Deployed Site
-				// todo GitHub site
-			// todo Description
+		// // fill out json file
+			// // title
+			// // imgs
+			// // Links
+				// // Deployed Site
+				// // GitHub site
+			// // Description
 
 // !WHEN I am presented with the Contact section
 // !THEN I see a contact form with fields for a name, an email address, and a message
@@ -95,15 +95,15 @@
 // !THEN I receive a notification if I have entered an invalid email address
 	// ? create If() statement with useState('')
 	// ? function to verifyEmail()
-	// todo use icon to notify it is valid
+	// * use icon to notify it is valid
 // !WHEN I am presented with the Resume section
 // !THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 	// // design RESUME component
-	// todo create link for resume to be downloaded
-		// todo button for pdf
-		// todo button for word
-	// todo create Proficiencies
-		// todo more icons-fa did not have all i want
+	// // create link for resume to be downloaded
+		// * button for pdf
+		// * button for word
+	// // create Proficiencies
+		// * more icons-fa did not have all i want
 
 // !WHEN I view the footer
 // !THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
@@ -114,16 +114,16 @@
 
 
 		// todo list for 7/24: 
-			// *contact form
-				//* add contact info
+			// //contact form
+				//// add contact info
 				// //how to handle
 				// //how to alert for required fields (react-toastify)
 				// //how to validate email
-			// * content
-				// *project.json file
-				// *aboutMe
-			// *md: & lg: style
-				// *take grey border off of skills box
+			// // content
+				// //project.json file
+				// //aboutMe
+			// //md: & lg: style
+				// //take grey border off of skills box
 				// *ease in on hovers-nav bar
 			// *more icons
 			// //email links
@@ -139,15 +139,15 @@
 		// / NAVBAR
 	// / CONTENT
 		// / HERO W/ NAME
-	// TODO ABOUTME
+	// // ABOUTME
 		// // PHOTO
-		// TODO DESCRIPTION
+		// // DESCRIPTION
 	// // PORTFOLIO
 		// // PROJECTCARDS
-	// TODO RESUME
+	// // RESUME
 		// // RESUME
 		// // link for download
-		// TODO PROFICIENCIES
+		// // PROFICIENCIES
 	// // FOOTER
 	// // CONTACT
 
@@ -191,7 +191,7 @@
 	// *IMAGES
 		// // name
 		// // pic
-		// todo projects(6)
+		// // projects(6)
 		// ? background images/floofy
 
 	// *ICON
