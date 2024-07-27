@@ -1,8 +1,6 @@
 import ContactForm from "../components/ContactForm"
 
 const ContactMe = () => {
-	
-// use state for message status
 
 
 	return (

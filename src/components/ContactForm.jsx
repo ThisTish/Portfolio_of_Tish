@@ -1,13 +1,7 @@
 import { useState, useRef } from "react"
 import emailjs from '@emailjs/browser'
 
-// use state for fields being left empty when cursor leaves 'onFocus'
-// onFocus(setInputStatus)
-
 const ContactForm = () => {
-
-
-	
 
 	const form = useRef()
 
@@ -17,10 +11,10 @@ const ContactForm = () => {
 	const [nameError, setNameError] = useState('')
 	const [emailError, setEmailError] = useState('')
 	const [messageError, setMessageError] = useState('')
-
 	const [color, setColor] = useState('primary')
 	const [validEmail, setValidEmail] = useState(true)
-
+	const [sentMessage, setSentMessage] = useState('')
+	const [messageSent, setMessageSent] = useState(false)
 
 
 	const handleInput = (event) => {
@@ -74,6 +68,7 @@ const ContactForm = () => {
 		}
 	}
 
+	// email.js for sending email
 	const sendMessage = (event) => {
 
 		event.preventDefault()
@@ -84,6 +79,9 @@ const ContactForm = () => {
 			publicKey: import.meta.env.VITE_PUBLIC_KEY
 		}).then(() =>{
 			console.log(`success!`)
+			setMessageSent(true)
+			setSentMessage('Message Sent!')
+			// toastify 'Message Sent!'
 		},
 		(error) =>{
 			console.log('Failed', error.text)
@@ -145,6 +143,7 @@ const ContactForm = () => {
 
 					></textarea>
 					{messageError && <p className="text-red text-xs">{messageError}</p>}
+					{/* add toastify? */}
 
 				</div>
 
@@ -153,12 +152,18 @@ const ContactForm = () => {
 					<div className="bg-yellow w-5 h-5 rounded-full absolute bottom-3"></div>
 					<div className="bg-shadow w-7 h-7 rounded-full absolute right-0"></div>
 					<div className="bg-highlight w-10 h-10 rounded-full absolute top-8 -left-48"></div>
-					<div className="border border-shadow border-3 w-5 h-5 rounded-full absolute top-4 right-40"></div>
+					<div className="border border-shadow border-3 w-5 h-5 rounded-full absolute top-4 right-40 -z-10"></div>
 					<div className="bg-green w-3 h-3 rounded-full absolute bottom-5 right-32"></div>
 					<div className="bg-secondary w-5 h-5 rounded-full absolute top-2 right-20 "></div>
 
 
-					<button type="submit" className="bg-red rounded-full px-5 text-highlight font-bold [text-shadow:_-2px_4px_0_var(--shadow)] " > Send </button>
+					<button 
+					type="submit"
+					className={`rounded-full px-5 text-highlight font-bold [text-shadow:_-2px_4px_0_var(--shadow)] ${messageSent ? 'bg-green' : 'bg-red'} `}
+					disabled={messageSent} >
+						{messageSent ? 'Sent' : 'Send'}
+					</button>
+					{sentMessage && <p className="text-primary text-xl">{sentMessage}</p>}
 				</div>
 			</form>
 		</div>

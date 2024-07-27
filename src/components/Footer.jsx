@@ -7,9 +7,11 @@ const Footer = () => {
 	return (
 		<div className="bg-secondary flex mt-auto">
 			<footer className="flex justify-start">
-				<NavLink to='/about'>
+				{/* img btn to go to home */}
+				<NavLink to='/'>
 					<img src={ logo } className='h-16 w-auto md:h-20' alt='TS-Tish Sirface Initials' />
 				</NavLink>
+				{/* socials */}
 				<div className="text-yellow w-64 pl-10 pr-5 text-xl rounded-tr-full rounded-br-full flex -ml-8 md:my-1 md:text-2xl items-center">
 					<a href= "https://www.instagram.com/threaded_goat/"className="-mt-1 bg-red rounded-full p-3 -ml-1 mr-1 md:mx-2 lg:mx-4"><FaInstagram /></a>
 					<a href= "https://x.com/SirTishFace"className="mt-6 bg-red rounded-full p-1  ml-1 mr-2 md:mx-4 lg:mx-8"><FaTwitter  /></a>

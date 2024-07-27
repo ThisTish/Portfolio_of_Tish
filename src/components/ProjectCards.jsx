@@ -1,7 +1,7 @@
 
-
+// add tooltips for description/problem-solution
 const ProjectCards = ({project}) => {
-  // const project = projects.project
+
   return (
     <section className='px-4 space-y-32 mt-32 flex flex-col items-center justify-center md:flex-row md:justify-around md:items-stretch lg:m-32 lg:space-y-48'>
       {/* first card */}

@@ -89,6 +89,11 @@ const AboutMe = () => {
 								<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sass</li>
 								<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;</li>
 							</ul>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;and:
+							<ul>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[...more]</li>
+							</ul>
+						</li>
 						</li>
 						</ul>
 						<li>&#125;</li>

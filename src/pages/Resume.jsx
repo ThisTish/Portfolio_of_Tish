@@ -23,17 +23,7 @@ const Resume = () => {
 				<WorkExperience />
 			</div>
 			<div className="flex mb-28 justify-center md:justify-end md:-mt-16 md:mr-24 ">
-			{/* <div className="flex justify-between text-secondary mx-6 my-7 py-2 text-xl font-sans bg-yellow max-w-sm md:-mr-1"> */}
-				{/* <div className='flex flex-col space-y-2'>
-				<p className='-ml-3 -mt-5'>For more</p>
-				<p className=' -mt-6'> details...</p>
-				</div>
-				<a href='/files/Tisha_Sirface_Web_Development_Resume.pdf' download='Tish_Sirface-Web_Development_Resume.pdf'>
-					<button className='bg-red text-highlight rounded-tl-full rounded-bl-full py-3 px-2 [text-shadow:_-2px_4px_0_var(--shadow)]'>
-						Download Resume 
-					</button>
-				</a> */}
-			
+			{/* download resume button */}
 				<a href='/files/Tisha_Sirface_Web_Development_Resume.pdf' download='Tish_Sirface-Web_Development_Resume.pdf'>
 					<button className='bg-red font-sans text-xl text-center text-highlight shadow-md shadow-secondary rounded-full p-5 [text-shadow:_-2px_4px_0_var(--shadow)] lg:text-4xl'>
 						Download Full Resume 
