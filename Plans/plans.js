@@ -1,4 +1,8 @@
+// *Resume first to animate. have to capture
+
 // Acceptance Criteria
+
+
 
 //!GIVEN a single-page application portfolio for a web developer
 // !WHEN I load the portfolio
@@ -113,7 +117,6 @@
 		////react-fa-icons?
 
 
-		// todo list for 7/24: 
 			// //contact form
 				//// add contact info
 				// //how to handle
