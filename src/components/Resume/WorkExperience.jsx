@@ -4,16 +4,19 @@ const WorkExperience = () => {
 
   const jobs = [
     {
+      id:1 ,
       place: "United States Postal Service",
       dates: "November.2020 - Presently",
       roles: "Data Conversion | Parcel Post Dist | Expedite"
     },
     {
+      id:2 ,
       place: "Threaded Goat",
       dates: "November.2017 - Presently",
       roles: "Owner | Creator of Crochet Goods | SEO"
     },
     {
+      id:3 ,
       place: "Vive Juicery",
       dates: "August.2019 - October.2020",
       roles: "Production | Sales Counter | Delivery"
@@ -27,7 +30,7 @@ const WorkExperience = () => {
         <div className="ml-5">
           <div className="text-secondary space-y-7 md:text-end">
           {jobs.map((job) => (
-            <div className="ml-5 text-secondary space-y-2">
+            <div key={job.id} className="ml-5 text-secondary space-y-2">
               <h4 className='font-sans text-lg lg:text-2xl '>{job.place}</h4>
               <p className=" font-light tracking-tight text-sm lg:text-lg">
               {job.dates}

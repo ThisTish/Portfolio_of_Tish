@@ -13,7 +13,7 @@ const App = () => {
     <BrowserRouter>  
     <Routes>
       <Route path='/' element={<MainLayout />} >
-        <Route index element={<AboutMe isActive={true} />} />,
+        <Route index element={<AboutMe />} />,
         <Route path='about' element={<AboutMe />} />
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='contact' element={<ContactMe  />} />

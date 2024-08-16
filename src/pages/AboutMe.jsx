@@ -3,7 +3,7 @@ const AboutMe = () => {
 
 
 	return (
-		<div className="flex flex-col mb-5">
+		<div className="flex flex-col mb-20">
 			<h2 className="text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] hidden md:block mx-3 my-1 lg:m-16 lg:text-end md:text-5xl lg:text-7xl">About Me</h2>
 			<div className="flex flex-col-reverse sm:flex-row md:mt-14 md:items-center">
 				{/* about me */}
