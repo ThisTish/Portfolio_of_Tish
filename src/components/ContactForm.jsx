@@ -156,10 +156,9 @@ const ContactForm = () => {
 					<div className="bg-green w-3 h-3 rounded-full absolute bottom-5 right-32"></div>
 					<div className="bg-secondary w-5 h-5 rounded-full absolute top-2 right-20 "></div>
 
-
 					<button 
 					type="submit"
-					className={`rounded-full px-5 text-highlight font-bold [text-shadow:_-2px_4px_0_var(--shadow)] ${messageSent ? 'bg-green' : 'bg-red'} `}
+					className={`rounded-full px-4 text-highlight shadow-md shadow-secondary font-bold [text-shadow:_-2px_4px_0_var(--shadow)] ${messageSent ? 'bg-green' : 'bg-red'} `}
 					disabled={messageSent} >
 						{messageSent ? 'Sent' : 'Send'}
 					</button>
