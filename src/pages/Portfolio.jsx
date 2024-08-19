@@ -6,7 +6,7 @@ const Portfolio = () => {
 		<section className='space-y-36  mb-32'>
 			<div className='ml-10 relative h-20 w-48 md:w-72 lg:h-24 lg:w-96 '>
 				<div className="bg-yellow w-5 h-5 rounded-full absolute bottom-3"></div>
-				<div className="bg-red w-6 h-6 rounded-full absolute left-14 "></div>
+				<div className="bg-red w-6 h-6 rounded-full absolute left-14 -z-10"></div>
 					<div className="bg-shadow w-7 h-7 rounded-full absolute -left-10 top-3 -z-10 lg:z-10 "></div>
 					<div className="bg-highlight w-10 h-10 rounded-full absolute top-8 -left-48"></div>
 					<div className="border border-shadow border-3 w-5 h-5 rounded-full absolute right-40 -z-10"></div>

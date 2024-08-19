@@ -17,9 +17,9 @@ const Projects = () => {
       },
       {
         id: 3,
-        title: "Movies & Munchies",
-        languages: "GitHub Projects | Third-Party API | HTML | JS",
-        description: "A site for planning a night of food & movies"
+        title: "Game Galaxxy",
+        languages: "Graphql | JWT Token | Third-Party API | React",
+        description: "A site to save, share, and rate gaming tutorials"
       }
 
     ]
