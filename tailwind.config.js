@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
+  // darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -19,9 +19,9 @@ export default {
         highlight: 'var(--highlight)',
         shadow: 'var(--shadow)'
       },
-      backgroundImage: {
-        'project-background': "url('./src/assets/images/projectBackground.png')"
-      },
+      // backgroundImage: {
+      //   'project-background': "url('./src/assets/images/projectBackground.png')"
+      // },
       fontFamily: {
         sans: ['Tilt Warp', 'Arial', 'sans-serif'],
         mono: ['Poppins', 'Times New Roman', 'Monaco', 'monospace' ]

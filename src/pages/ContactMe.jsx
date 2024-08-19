@@ -5,10 +5,10 @@ const ContactMe = () => {
 
 	return (
 		<div className="flex flex-col mx-auto">
-			<div className="flex flex-col md:flex-row lg:space-x-20">
-				<div className="hidden md:flex">
-					<div className=" flex-col p-10  md:flex">
-						<h2 className="text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] md:block mx-3 my-10 lg:m-16 lg:text-end md:text-5xl lg:text-7xl">Contact Me</h2>
+			<div className="flex flex-col md:flex-row justify-around mr-5 lg:mr-24">
+				<div className="hidden my-10 md:flex">
+					<div className=" flex-col justify-center bg-green h-fit px-10 py-16 lg:px-20 lg:py-36 space-y-16 rounded-full md:flex">
+						<h2 className="text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] md:block lg:text-end md:text-5xl lg:text-7xl">Contact Me</h2>
 						<ul className="text-secondary space-y-2">
 							<li className="font-semibold lg:text-2xl">
 								Tish.Sirface@gmail.com

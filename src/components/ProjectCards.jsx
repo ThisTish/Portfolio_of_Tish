@@ -7,13 +7,16 @@ const ProjectCards = ({ project }) => {
 			{/* first card */}
 			<div className="flex">
 
-				<div className="text-secondary float mt-20 -mr-12 z-10 lg:mt-48">
+				<div className="text-secondary float bg-highlight rounded-full p-3 mt-20 -mr-14 z-0 md:p-5 h-fit lg:mt-48">
 					<a href={project.websiteLink1}><h4 className=" font-extrabold text-sm m-1 md:text-lg md:mr-5 lg:text-2xl">{project.title1}</h4></a>
 					<p className="text-xs font-bold md:text-base lg:text-xl ">{project.description1}</p>
 					<a className="text-shadow text-xs md:text-base lg:text-lg font-sans tracking-wide" href={project.repoLink1}>Repo</a>
 				</div>
 				<div className="bg-yellow w-32 h-32 rounded-full md:min-w-48 md:h-48 lg:min-w-72 lg:h-72">
-					<a href={project.websiteLink1}><img src={project.imgSrc1} className='w-24 h-24 rounded-full grayscale brightness-100 hover:brightness-100 hover:grayscale-0 transition duration-300 ease-in-out md:w-32 md:h-32 lg:min-w-48 lg:h-48 ' /></a>
+					<a href={project.websiteLink1}>
+						<img src={project.imgSrc1} 
+							className='w-24 h-24 rounded-full grayscale brightness-100 hover:brightness-100 hover:grayscale-0 transition duration-300 ease-in-out md:w-32 md:h-32 lg:min-w-48 lg:h-48 ' />
+						</a>
 				</div>
 
 				<div className="">
@@ -31,7 +34,7 @@ const ProjectCards = ({ project }) => {
 				<a href={project.websiteLink2}><img src={project.imgSrc2} className='w-24 h-24 rounded-full grayscale brightness-90 hover:brightness-100 hover:grayscale-0 transition duration-300 ease-in-out md:w-32 md:h-32 lg:min-w-48 lg:h-48' /></a>
 				</div>
 
-				<div className="text-secondary md:-ml-8 float md:text-end mt-5 ">
+				<div className="text-secondary bg-highlight py-5 -mt-4 -ml-4 rounded-full px-4 md:-ml-14 md:p-5 h-fit float md:text-end ">
 					<p className="text-xs font-semibold md:text-base lg:text-xl">{project.description2}</p>
 					<a href={project.websiteLink2}><h4 className=" font-extrabold text-sm m-1 md:text-lg lg:text-2xl">{project.title2}</h4></a>
 					<a className="text-shadow text-xs md:text-base lg:text-lg font-sans tracking-wide" href={project.repoLink1}>Repo</a>

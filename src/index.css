@@ -3,21 +3,72 @@
 @tailwind utilities;
 
 
+@layer base{
+	:root {
 
-:root {
-
-	/* colors */
-	body {
-	--secondary: #003B4A;
-	--primary: #B8DED5;
-	--green: #8EA66A;
-	--yellow: #D9B95B;
-	--red: #BF5349;
-	--highlight: #F2F2F2;
-	--shadow: #464646;
+		/* colors */
+		
+		--secondary: #003B4A;
+		--primary: #B8DED5;
+		--green: #8EA66A;
+		--yellow: #D9B95B;
+		--red: #BF5349;
+		--highlight: #F2F2F2;
+		--shadow: #464646;
+		
 	}
 
+
+*{
+	@apply transition-colors duration-500 ease-in-out;
 }
+
+}
+
+.theme-invert{
+	--primary: #1C0A29;
+	--secondary: #7e4e9e;
+	--yellow: #616933;
+	--green: #25290A;
+	--red: #9e7da8;
+	--shadow: #419100;
+	--highlight: #B9B9B9;
+
+}
+
+
+.theme-dark-grayscale{
+
+		--secondary: #0D0B07;
+		--yellow: #D9D9D9;
+		--red: #8C8B88;
+		--green: #595856;
+		--primary: #262118;
+		--highlight: #ffffff;
+		--shadow: #4f4f4f;
+}
+
+.theme-autumn{
+
+		--secondary: #520120;
+		--primary: #08403E;
+		--green: #706513;
+		--yellow: #B57114;
+		--red: #962B09;
+		--highlight: #F1E2C3;
+		--shadow: #335802;
+}
+.theme-summer{
+
+		--secondary: #A37AFF;
+		--primary: #45D4DE;
+		--green: #FF5294;
+		--yellow: #F4CF5D;
+		--red: #E2026B;
+		--highlight: #fff;
+		--shadow: #000;
+}
+
 	/* not quite here yet. need more tailwind config for this. might change to secondary palette */
 	/* body.dark-mode{
 		--primary: #003B4A;

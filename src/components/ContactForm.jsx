@@ -97,14 +97,14 @@ const ContactForm = () => {
 
 	return (
 		<div className="flex flex-col my-24 ">
-			<form ref={form} onSubmit={sendMessage}  className="space-y-10 flex flex-col items-end lg:text-xl">
+			<form ref={form} onSubmit={sendMessage}  className="space-y-10 flex flex-col items-end text-red font-light lg:text-xl">
 				<div>
-					<label className="text-secondary font-light" htmlFor="name">Name</label>
+					<label htmlFor="name">Name</label>
 					<input 
 					type="text" 
 					id="name" 
 					name="name" 
-					className="max-w-48 rounded-full border-yellow border-4 p-2 text-secondary focus:color lg:max-w-52"
+					className="max-w-48 rounded-full bg-highlight border-yellow border-4 p-2 text-secondary focus:color lg:max-w-52"
 					required
 					value={name}
 					onChange={(event) => setName(event.target.value)}
@@ -114,7 +114,7 @@ const ContactForm = () => {
 				</div>
 
 				<div>
-					<label className="text-secondary font-light " htmlFor="email">Email</label>
+					<label  htmlFor="email">Email</label>
 					<input 
 					type="text" 
 					id="email" 
@@ -131,11 +131,11 @@ const ContactForm = () => {
 				</div>
 
 				<div>
-					<label className="text-secondary font-light" htmlFor="message" >Message</label>
+					<label  htmlFor="message" >Message</label>
 					<textarea 
 					name="message" 
 					id="message" 
-					className="rounded-3xl h-32 w-72 border-8 border-green p-3 text-secondary focus:color lg:min-w-96 lg:h-52"
+					className="rounded-3xl h-32 w-72 border-8 bg-highlight border-green p-3 text-secondary focus:color lg:min-w-96 lg:h-52"
 					required
 					value={message}
 					onChange={(event) => setMessage(event.target.value)}
