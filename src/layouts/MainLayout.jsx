@@ -28,10 +28,10 @@ const MainLayout = () => {
 	return (
 		<>
 			<main className={`bg-primary theme-${theme}`}>
-				<Header />
-				<div className="flex text-highlight text-xs md:text-base lg:text-2xl absolute top-0 right-0">
-					<h3 className="font-semibold tracking-widest hidden ">Select Theme ...</h3>
-					<div className="flex flex-col md:flex-row gap-2 py-3 px-5 lg:gap-6 ">
+				<Header theme={theme}/>
+				<div className="flex text-highlight text-xs md:text-base py-3 lg:text-2xl absolute top-0 right-0">
+					<p className="font-extralight  lg:text-lg tracking-widest hidden md:block ">Select Theme...</p>
+					<div className="flex flex-col md:flex-row gap-2 px-5 lg:gap-6 ">
 						{themes.map((t, index) => (
 							<div key={index} className="cursor-pointer" onClick={() => setTheme(t.class)} >{t.icon}</div>
 						))}

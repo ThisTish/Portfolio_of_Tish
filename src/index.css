@@ -25,17 +25,6 @@
 
 }
 
-.theme-invert{
-	--primary: #1C0A29;
-	--secondary: #7e4e9e;
-	--yellow: #616933;
-	--green: #25290A;
-	--red: #9e7da8;
-	--shadow: #419100;
-	--highlight: #B9B9B9;
-
-}
-
 
 .theme-dark-grayscale{
 
@@ -58,6 +47,7 @@
 		--highlight: #F1E2C3;
 		--shadow: #335802;
 }
+
 .theme-summer{
 
 		--secondary: #A37AFF;
