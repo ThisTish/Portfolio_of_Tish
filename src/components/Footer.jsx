@@ -1,15 +1,19 @@
 import { NavLink } from "react-router-dom"
-import logo from '../assets/images/logo.png'
+// import logo from '../assets/images/logo.png'
 import { FaGithub, FaLinkedinIn, FaEnvelope, FaInstagram, FaTwitter } from 'react-icons/fa' 
+import { useTheme } from "./ThemeProvider"
 
 
 const Footer = () => {
+
+	const { theme}  = useTheme()
+
 	return (
 		<div className="bg-secondary sticky bottom-0 mt-auto z-20">
 			<footer className="flex justify-start">
 				{/* img btn to go to home */}
 				<NavLink to='/about'>
-					<img src={ logo } className='h-16 w-auto md:h-20' alt='TS-Tish Sirface Initials' />
+					<img src={ theme.images.logo } className='h-16 w-auto md:h-20' alt='TS-Tish Sirface Initials' />
 				</NavLink>
 				{/* socials */}
 				<div className="text-yellow w-64 pl-10 pr-5 text-xl rounded-tr-full rounded-br-full flex -ml-8 md:my-1 md:text-2xl items-center relative">

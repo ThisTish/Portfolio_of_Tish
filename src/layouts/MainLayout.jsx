@@ -9,7 +9,7 @@ const MainLayout = () => {
 	const { theme, setTheme } = useTheme()
 	return (
 		<>
-			<main className={`bg-primary theme-${theme}`}>
+			<main className={`bg-primary theme-${theme.class}`}>
 				<Header theme={theme} />
 				<div className="flex text-highlight text-xs md:text-base py-3 lg:text-2xl absolute top-0 right-0">
 					<p className="font-extralight  lg:text-lg tracking-widest hidden md:block ">Select Theme...</p>
@@ -17,7 +17,7 @@ const MainLayout = () => {
 						<FaHouseUser onClick={() => setTheme("base")} />
 						<FaCanadianMapleLeaf onClick={() => setTheme("autumn")} />
 						<FaUmbrellaBeach onClick={() => setTheme("summer")} />
-						<FaMoon onClick={() => setTheme("dark-grayscale")} />
+						<FaMoon onClick={() => setTheme("grayscale")} />
 					</div>
 				</div>
 				<Outlet />
