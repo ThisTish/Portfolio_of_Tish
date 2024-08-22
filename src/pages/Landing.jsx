@@ -1,4 +1,6 @@
 import { useTheme } from '../components/ThemeProvider'
+import ProfilePicAnimated from '../components/ProfilePicAnimated'
+import MyDreams from '../components/MyDreams'
 
 
 const Landing = () => {
@@ -6,15 +8,23 @@ const Landing = () => {
 
 	return (
 		<>
-		<main className='grid-cols-2'>
+			<main>
 
 
-		<div>
-			<video src={theme.video.pic} autoPlay muted />
-		</div>
+				<div className='text-highlight flex items-center ml-96'>
+					<div className="flex flex-col text-center">
+						<h2 className='text-4xl'> Hi, I'm Tish</h2>
+						<p> I'm a Dreamer, Designer, and Disc Golfer</p>
+					</div>
+					<ProfilePicAnimated />
+				</div>
+
+				<div>
+					<MyDreams />
+				</div>
 
 
-		</main>
+			</main>
 		</>
 	)
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 // import profilePic from '../assets/images/profilePic.mp4'
 import { useTheme } from './ThemeProvider'
 

@@ -1,6 +1,7 @@
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider, BrowserRouter, Routes } from 'react-router-dom'
 import './index.css'
 import MainLayout from './layouts/MainLayout.jsx'
+import Landing from './pages/Landing.jsx'
 import AboutMe from './pages/AboutMe.jsx'
 import Portfolio from './pages/Portfolio.jsx'
 import ContactMe from './pages/ContactMe.jsx'
@@ -15,6 +16,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<MainLayout />} >
             <Route index element={<AboutMe />} />,
+            <Route path='landing' element={<Landing />} />
             <Route path='about' element={<AboutMe />} />
             <Route path='portfolio' element={<Portfolio />} />
             <Route path='contact' element={<ContactMe />} />
