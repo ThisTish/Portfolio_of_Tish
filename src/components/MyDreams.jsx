@@ -1,13 +1,12 @@
-import React from 'react'
+import YourDream from "./YourDream"
 
 const MyDreams = () => {
 	return (
-		<main className='grid-cols-2'>
+		<main className=''>
 			<div>
-				<image>
 
-				</image>
 			</div>
+
 			<div>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, perspiciatis.
@@ -16,6 +15,8 @@ const MyDreams = () => {
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem ad ipsum molestias ex. Repellat fugiat vel inventore est quibusdam.
 				</p>
 			</div>
+
+			
 		</main>
 
 	)

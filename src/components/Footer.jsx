@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom"
-// import logo from '../assets/images/logo.png'
 import { FaGithub, FaLinkedinIn, FaEnvelope, FaInstagram, FaTwitter } from 'react-icons/fa' 
 import { useTheme } from "./ThemeProvider"
 

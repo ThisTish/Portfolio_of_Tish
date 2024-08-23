@@ -1,6 +1,7 @@
 import { useTheme } from '../components/ThemeProvider'
 import ProfilePicAnimated from '../components/ProfilePicAnimated'
 import MyDreams from '../components/MyDreams'
+import YourDream from '../components/YourDream'
 
 
 const Landing = () => {
@@ -21,6 +22,10 @@ const Landing = () => {
 
 				<div>
 					<MyDreams />
+				</div>
+
+				<div>
+					<YourDream />
 				</div>
 
 

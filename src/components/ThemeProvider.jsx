@@ -1,5 +1,4 @@
 import { createContext, useContext, useState } from "react"
-import { useLocation } from "react-router-dom"
 import TishSirfaceName from '../assets/images/TishSirfaceName.png'
 import logo from '../assets/images/logo.png'
 import profilePic from '../assets/images/profilePic.mp4'
