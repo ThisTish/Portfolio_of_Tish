@@ -38,7 +38,7 @@ const Projects = () => {
 					
 			
       
-      <div key={project.id} className=" text-secondary space-y-2">
+      <div key={project.id} className=" text-highlight space-y-2">
         <h4 className='font-sans font-xl lg:text-2xl lg:mt-10'><a href={project.url}>{project.title}</a></h4>
         <p className=" font-light tracking-tight text-sm lg:text-lg">
           {project.languages}

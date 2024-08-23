@@ -32,6 +32,7 @@
 					// *tech used
 					// *my role
 					// *problem solved
+			//* underline animation. grows out from middle 
 
 	
 // !CUSTOM DOMAIN
