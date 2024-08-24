@@ -1,10 +1,10 @@
-import Hero from "./Hero"
+import NameLogo from "./NameLogo"
 import NavBar from "./NavBar"
 
 const Header = () => {
 	return (
 		<div className="flex bg-secondary relative">
-			<Hero />
+			<NameLogo />
 			<NavBar />
 		</div>
 	)

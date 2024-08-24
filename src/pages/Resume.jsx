@@ -33,7 +33,7 @@ const Resume = () => {
 					<div className="bg-secondary w-5 h-5 rounded-full absolute top-1 right-14 "></div>
 					<div className="bg-secondary w-5 h-5 rounded-full absolute left-8 -top-3 -z-10 "></div>
 
-					<a href='/files/Tisha_Sirface_Web_Development_Resume.pdf' download='Tish_Sirface-Web_Development_Resume.pdf'>
+					<a href='/files/Tish_Sirface_Web_Development.pdf' download='Tish_Sirface-Web_Development_Resume.pdf'>
 					<button className='bg-red font-sans text-xl text-center text-highlight shadow-md shadow-secondary rounded-full p-5 [text-shadow:_-2px_4px_0_var(--shadow)] lg:text-4xl'>
 						Download Full Resume 
 					</button>

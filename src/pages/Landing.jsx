@@ -1,7 +1,7 @@
 import { useTheme } from '../components/ThemeProvider'
 import ProfilePicAnimated from '../components/ProfilePicAnimated'
-import MyDreams from '../components/MyDreams'
-import YourDream from '../components/YourDream'
+import MyDreams from '../components/Hero/MyDreams'
+import YourDream from '../components/Hero/YourDream'
 
 
 const Landing = () => {

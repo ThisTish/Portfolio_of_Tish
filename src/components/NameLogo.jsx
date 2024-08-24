@@ -1,15 +1,17 @@
 import { useTheme } from './ThemeProvider'
+import {Link} from 'react-router-dom'
 
 
-const Hero = () => {
+const NameLogo = () => {
 	const { theme } = useTheme()
 
 	return (
 	<div className='mx-auto w-screen'>
+		<Link to='/'>
 		<img src={ theme.images.name }  className='h-40' alt='Tish Sirface with squiggles'/>
-		{/* https://embiem.github.io/react-canvas-draw/ */}
+		</Link>
 	</div>
 	)
 }
 
-export default Hero
+export default NameLogo
