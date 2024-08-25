@@ -2,18 +2,23 @@ import { createContext, useContext, useState } from "react"
 import TishSirfaceName from '../assets/images/TishSirfaceName.png'
 import logo from '../assets/images/logo.png'
 import profilePic from '../assets/images/profilePic.mp4'
+import Hero from '../assets/images/Hero.png'
 
 import SummerName from '../assets/images/SummerName.png'
 import SummerLogo from '../assets/images/SummerLogo.png'
 import SummerPic from '../assets/images/summerPic.mp4'
+import SummerHero from '../assets/images/SummerHero.png'
+
 
 import AutumnName from '../assets/images/AutumnName.png'
 import AutumnLogo from '../assets/images/AutumnLogo.png'
 import AutumnPic from '../assets/images/AutumnProfilePic.mp4'
+import AutumnHero from '../assets/images/AutumnHero.png'
 
 import GrayName from '../assets/images/GrayName.png'
 import GrayLogo from '../assets/images/GrayLogo.png'
 import GrayPic from '../assets/images/GrayProfilePic.mp4'
+import GrayHero from '../assets/images/GrayHero.png'
 
 const ThemeContext = createContext(null)
 
@@ -22,7 +27,8 @@ const themes = {
 		class: "base",
 		images: {
 			name: TishSirfaceName,
-			logo: logo
+			logo: logo,
+			hero: Hero
 		},
 		video: {
 			pic: profilePic
@@ -32,7 +38,8 @@ const themes = {
 		class: "summer",
 		images: {
 			name: SummerName,
-			logo: SummerLogo
+			logo: SummerLogo,
+			hero: SummerHero
 		},
 		video: {
 			pic: SummerPic
@@ -42,7 +49,8 @@ const themes = {
 		class: "autumn",
 		images: {
 			name: AutumnName,
-			logo: AutumnLogo
+			logo: AutumnLogo,
+			hero: AutumnHero
 		},
 		video: {
 			pic: AutumnPic
@@ -52,7 +60,8 @@ const themes = {
 		class: "grayscale",
 		images: {
 			name: GrayName,
-			logo: GrayLogo
+			logo: GrayLogo,
+			hero: GrayHero
 		},
 		video: {
 			pic: GrayPic
