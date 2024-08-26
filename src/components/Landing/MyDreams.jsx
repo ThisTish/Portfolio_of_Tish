@@ -18,15 +18,15 @@ const MyDreams = () => {
 
 	return (
 		<>
-			<div className="container min-w-full bg-green -pt-40" >
+			<div className="md:container py-24 min-w-full bg-green space-y-24 mb-40 md:py-0 md:-pt-40" >
 				{dreams.map((dream) => {
 					const imagePath = images[dream.image]
 					return (
-						<section className='h-screen flex snap-center scroll-py-10' key={dream.id}>
+						<section className='md:h-screen md:flex md:snap-center md:scroll-py-10' key={dream.id}>
 
 							{/* dream words */}
-							<div className='w-3/5'>
-								<div className='flex flex-col items-center justify-center h-screen ml-10 border-5 border-yellow background-highlight text-highlight space-y-4'>
+							<div className='md:w-3/5'>
+								<div className='flex flex-col items-center justify-center md:h-screen ml-10 border-5 border-yellow background-highlight text-highlight space-y-4'>
 									<p className='text-4xl'>{dream.header}</p>
 									<p className='tracking-tighter mx-12 '>{dream.description}</p>
 									<p className='font-semibold tracking-wider'>{dream.plan}</p>
@@ -34,8 +34,8 @@ const MyDreams = () => {
 							</div>
 
 							{/* dream pics */}
-							<div className='w-2/5 flex items-center justify-center'>
-								<img src={imagePath} alt="" className="w-96 h-96 rounded-full" />
+							<div className='md:w-2/5 flex items-center justify-end -mt-7 md:mt-0 md:justify-center'>
+								<img src={imagePath} alt="" className="opacity-35 w-48 h-48 md:opacity-100 md:w-96 md:h-96 rounded-full" />
 							</div>
 						</section>
 					)
