@@ -1,5 +1,6 @@
 import { useTheme } from "../ThemeProvider"
 import { FaArrowCircleDown, FaArrowAltCircleRight, FaArrowCircleRight } from 'react-icons/fa'
+import { Link } from "react-router-dom"
 
 
 const Hero = () => {
@@ -18,11 +19,11 @@ const Hero = () => {
 				<p className='ml-2 text-highlight font-extralight tracking-widest text-lg absolute top-2/3 sm:text-2xl md:text-4xl'> Developer, Dreamer, Disc Golfer </p>
 
 				<div className='absolute flex right-3 bottom-2 space-x-3 md:space-x-5 md:bottom-10 md:right-10 lg:bottom-20 lg:right-20'>
-					<a className='text-secondary text-2xl rounded-full bg-highlight sm:hidden'><FaArrowCircleDown /></a>
-					<a className='hidden text-highlight tracking-tighter p-3 text-xs bg-secondary rounded-full border-2 border-highlight hover:bg-green hover:border-0 sm:block md:text-lg'>Dream with me</a>
+					<a href='#my-dreams' className='text-secondary text-2xl rounded-full bg-highlight sm:hidden'><FaArrowCircleDown /></a>
+					<a href='#my-dreams' className='hidden text-highlight tracking-tighter p-3 text-xs bg-secondary rounded-full border-2 border-highlight hover:bg-green hover:border-0 sm:block md:text-lg'>Dream with me</a>
 
-					<a className='text-highlight text-2xl rounded-ful bg-secondary rounded-full sm:hidden'><FaArrowCircleRight /></a>
-					<a className='hidden text-secondary tracking-tighter p-3 text-xs bg-highlight rounded-full border-2 border-secondary hover:bg-green hover:border-0 hover:text-highlight sm:block md:text-lg'>My Projects</a>
+					<Link to='/portfolio' className='text-highlight text-2xl rounded-ful bg-secondary rounded-full sm:hidden'><FaArrowCircleRight /></Link>
+					<Link to='/portfolio' className='hidden text-secondary tracking-tighter p-3 text-xs bg-highlight rounded-full border-2 border-secondary hover:bg-green hover:border-0 hover:text-highlight sm:block md:text-lg'>My Projects</Link>
 				</div>
 			</div>
 		</div>

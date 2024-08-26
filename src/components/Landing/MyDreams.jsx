@@ -18,7 +18,8 @@ const MyDreams = () => {
 
 	return (
 		<>
-			<div className="md:container py-24 min-w-full bg-green space-y-24 mb-40 md:py-0 md:-pt-40" >
+		{/* md:container */}
+			<div className=" py-24 min-w-full bg-green space-y-24 mb-40 md:py-0 md:-pt-40" >
 				{dreams.map((dream) => {
 					const imagePath = images[dream.image]
 					return (

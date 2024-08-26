@@ -14,7 +14,7 @@ const Landing = () => {
 					<Hero />
 				</div>
 
-				<div>
+				<div id="my-dreams">
 			<h1 className='text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] text-center md:-mb-7 md:text-5xl lg:text-7xl'>My Dreams</h1>
 
 					<MyDreams />
