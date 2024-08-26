@@ -2,36 +2,36 @@
 	{
 		"id": 1,
 		"header": "Clean Air & a Healthy Planet",
-		"description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore odio repellendus inventore veniam delectus reprehenderit consectetur eius et repellat itaque?",
-		"plan": "I would like to build an app that tracks how much you're recycling, and the impact that you've made. Along with making it easier to, by education what to and where to recycle.",
+		"description":" Clean air and a sustainable environment are not just ideal goals—they are essential for the survival and prosperity of humanity. By prioritizing eco-friendly practices and education, we can ensure a healthier planet and a brighter future for all. I am a big supporter of recycling and have myself been confused before on what I can or can't recycle, and where to drop off unique items. I hope we can make this easier for everyone.",
+		"plan": "I want to build an app that tracks your recycling efforts and measures the impact you've made. The app will also provide education on what and where to recycle, making it easier to contribute to a sustainable future.",
 		"image": "recycle.jpg"
 	},
 	{
 		"id": 2,
 		"header": "Tolerance, Equality, and Understanding",
-		"description":"People hate what they are afraid of, and people are afraid of what they don't know. I believe that the world we have created comes a lot from resistance to continue to learn and reach out to people. Adipisicing elit. Dolore odio repellendus inventore veniam delectus reprehenderit consectetur eius et repellat itaque?epellendus inventore veniam delectus reprehenderit consectetur eius et repellat itaque?epellendus inventore veniam delectus reprehenderit consectetur eius et repellat itaque?",
-		"plan": "It would be refreshing to have a platform that gets people out of the algorithms and echo chambers by exposing more of the world to everyone. We could do that by providing an app that provides users shorts, reels, or articles randomly. There will have to be some vetting process of the material provided, but exposure to all for all is the point.",
+		"description":"Fear often stems from a lack of understanding, and people tend to fear what they don't know. In today's world, we’ve grown uncomfortable with exploring beyond our familiar boundaries. By encouraging each other to learn about different cultures, traditions, beliefs, and values, we can realize that at our core, everyone is seeking love and happiness.",
+		"plan": "Imagine a platform that breaks us free from the echo chambers created by algorithms, offering a chance to explore the world beyond our usual circles. An app could deliver random shorts, reels, or articles, broadening horizons and fostering a deeper understanding of the diverse world around us.",
 		"image": "together.jpg"
 	},
 	{
 		"id": 3,
 		"header": "Make Education a Priority & Accessible",
-		"description":"To play more off of the previous dream. A higher educated society is a less violent society. veniam delectus reprehenderit consectetur eius et repellat itaque?",
-		"plan": "I require a lot of help with this one, but I dream of an augmented reality app that you can use to explore historical sites and major educational locations, all while making it fun!",
+		"description":"An educated society is a safer, more informed one. As history tends to repeat itself, we can't afford to overlook past mistakes. By making learning more accessible and enjoyable, we can improve society for everyone.",
+		"plan": "This would be an ambitious project, but I dream of creating an augmented reality app that lets users explore historical sites and key educational locations. This could make learning fun and engaging for all.",
 		"image": "learn.jpg"
 	},
 	{
 		"id": 4,
 		"header": "Food & Shelter For All",
-		"description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore odio repellendus inventore veniam delectus reprehenderit consectetur eius et repellat itaque?",
-		"plan": "I'm still trying to work this out in my head, and to get more context and ideas, I plan on diving into volunteering in my community to fully understand the programs in place already.",
+		"description":"Everyone has the fundamental right to live with dignity, and that begins with access to food and shelter. It’s a difficult issue to confront, but imagining life without a home, that is often compounded by mental illness, is a sobering thought. If we could find better ways to distribute our abundant resources, we could make a real difference in people's lives and provide a positive impact on society.",
+		"plan": "One possible solution could involve creating a platform that connects surplus food and available shelters directly with those in need, streamlining the distribution process. ",
 		"image": "donate.jpg"
 	},
 	{
 		"id": 5,
 		"header": "Get Out & Get Together",
-		"description":"I am always that person that wants to get friends of mine to meet other friends of mine, but it can be hard to get them all together. I have run into the issue multiple times trying to get groups together to go disc golfing. I send out a text to get one together, and have to wait to hear from everyone back, if they can't do it, then I text the next group seeing if they can, so on and so forth. This ineffeciency drove me crazy. It shouldn't be this hard to get together with friends out side of the digital world, when we are so connected on there.ellat itaque?",
-		"plan": "To solve this problem, I brought it up as a school project, and we created an app, 'In Or Out' that takes out a lot of the frustrations by allowing users to create an activity card that other friends can join in on. I am now working on focusing a more in depth application based on this just for Disc Golf.",
+		"description":"I'm the kind of person who loves connecting my friends, but organizing group activities can be a real challenge. I've faced this issue repeatedly when trying to gather people for a disc golf outing. I’d send out a text to one group, wait for responses, and if they couldn’t make it, I'd move on to the next group. The inefficiency was frustrating. It shouldn’t be so hard to get together with friends outside the digital world, especially when we’re so connected online.",
+		"plan": "To solve this problem, I proposed it as a school project, and we developed an app called 'In Or Out.' The app simplifies planning by allowing users to create activity cards that friends can easily join. Now, I’m working on a more focused version of the app, specifically designed for organizing disc golf outings.",
 		"image": "fun.jpg"
 	}
 ]

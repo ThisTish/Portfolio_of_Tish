@@ -18,18 +18,18 @@ const MyDreams = () => {
 
 	return (
 		<>
-			<div className="container mx-auto" >
+			<div className="container min-w-full bg-green -pt-40" >
 				{dreams.map((dream) => {
 					const imagePath = images[dream.image]
 					return (
-						<section className='h-screen flex snap-start' key={dream.id}>
+						<section className='h-screen flex snap-center scroll-py-10' key={dream.id}>
 
 							{/* dream words */}
 							<div className='w-3/5'>
-								<div className='flex flex-col items-center justify-center h-screen ml-10 border-5 border-yellow background-highlight text-secondary'>
-									<p>{dream.header}</p>
-									<p>{dream.description}</p>
-									<p>{dream.plan}</p>
+								<div className='flex flex-col items-center justify-center h-screen ml-10 border-5 border-yellow background-highlight text-highlight space-y-4'>
+									<p className='text-4xl'>{dream.header}</p>
+									<p className='tracking-tighter mx-12 '>{dream.description}</p>
+									<p className='font-semibold tracking-wider'>{dream.plan}</p>
 								</div>
 							</div>
 

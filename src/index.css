@@ -80,8 +80,9 @@
 
 	@layer components{
 		.container{
+			min-height: 100vh;
 			max-height: 100vh;
-			overflow-y: scroll;
+			overflow-y: auto;
 			scroll-snap-type: y mandatory;
 			scrollbar-width: none;
 			scroll-behavior: smooth;
