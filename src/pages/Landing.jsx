@@ -20,10 +20,10 @@ const Landing = () => {
 
 					<MyDreams />
 				</div>
-
+{/* 
 				<div>
 					<YourDream />
-				</div>
+				</div> */}
 
 				{/* <div className="pb-96 flex flex-col items-center justify-center bg-yellow space-y-10">
 			<h1 className='text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] md:text-5xl lg:text-7xl'>Your Dreams</h1>
