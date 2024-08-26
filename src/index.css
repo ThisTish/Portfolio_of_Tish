@@ -77,3 +77,15 @@
 	h1,h2,h3,h4,h5 {
 		@apply font-sans
 	}
+
+	@layer components{
+		.container{
+			max-height: 100vh;
+			overflow-y: scroll;
+			scroll-snap-type: y mandatory;
+			scrollbar-width: none;
+			scroll-behavior: smooth;
+			scroll-margin-top: 0;
+		}
+
+	}

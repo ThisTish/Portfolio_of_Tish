@@ -1,0 +1,37 @@
+[
+	{
+		"id": 1,
+		"header": "Clean Air & a Healthy Planet",
+		"description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore odio repellendus inventore veniam delectus reprehenderit consectetur eius et repellat itaque?",
+		"plan": "I would like to build an app that tracks how much you're recycling, and the impact that you've made. Along with making it easier to, by education what to and where to recycle.",
+		"image": "recycle.jpg"
+	},
+	{
+		"id": 2,
+		"header": "Tolerance, Equality, and Understanding",
+		"description":"People hate what they are afraid of, and people are afraid of what they don't know. I believe that the world we have created comes a lot from resistance to continue to learn and reach out to people. Adipisicing elit. Dolore odio repellendus inventore veniam delectus reprehenderit consectetur eius et repellat itaque?epellendus inventore veniam delectus reprehenderit consectetur eius et repellat itaque?epellendus inventore veniam delectus reprehenderit consectetur eius et repellat itaque?",
+		"plan": "It would be refreshing to have a platform that gets people out of the algorithms and echo chambers by exposing more of the world to everyone. We could do that by providing an app that provides users shorts, reels, or articles randomly. There will have to be some vetting process of the material provided, but exposure to all for all is the point.",
+		"image": "together.jpg"
+	},
+	{
+		"id": 3,
+		"header": "Make Education a Priority & Accessible",
+		"description":"To play more off of the previous dream. A higher educated society is a less violent society. veniam delectus reprehenderit consectetur eius et repellat itaque?",
+		"plan": "I require a lot of help with this one, but I dream of an augmented reality app that you can use to explore historical sites and major educational locations, all while making it fun!",
+		"image": "learn.jpg"
+	},
+	{
+		"id": 4,
+		"header": "Food & Shelter For All",
+		"description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore odio repellendus inventore veniam delectus reprehenderit consectetur eius et repellat itaque?",
+		"plan": "I'm still trying to work this out in my head, and to get more context and ideas, I plan on diving into volunteering in my community to fully understand the programs in place already.",
+		"image": "donate.jpg"
+	},
+	{
+		"id": 5,
+		"header": "Get Out & Get Together",
+		"description":"I am always that person that wants to get friends of mine to meet other friends of mine, but it can be hard to get them all together. I have run into the issue multiple times trying to get groups together to go disc golfing. I send out a text to get one together, and have to wait to hear from everyone back, if they can't do it, then I text the next group seeing if they can, so on and so forth. This ineffeciency drove me crazy. It shouldn't be this hard to get together with friends out side of the digital world, when we are so connected on there.ellat itaque?",
+		"plan": "To solve this problem, I brought it up as a school project, and we created an app, 'In Or Out' that takes out a lot of the frustrations by allowing users to create an activity card that other friends can join in on. I am now working on focusing a more in depth application based on this just for Disc Golf.",
+		"image": "fun.jpg"
+	}
+]

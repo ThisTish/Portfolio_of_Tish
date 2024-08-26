@@ -1,5 +1,5 @@
 import ProjectCards from '../components/ProjectCards'
-import projectList from '../projects.json'
+import projectList from '../data/projects.json'
 
 const Portfolio = () => {
 	return (

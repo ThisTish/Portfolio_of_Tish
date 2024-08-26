@@ -9,7 +9,6 @@ import SummerLogo from '../assets/images/SummerLogo.png'
 import SummerPic from '../assets/images/summerPic.mp4'
 import SummerHero from '../assets/images/SummerHero.png'
 
-
 import AutumnName from '../assets/images/AutumnName.png'
 import AutumnLogo from '../assets/images/AutumnLogo.png'
 import AutumnPic from '../assets/images/AutumnProfilePic.mp4'
