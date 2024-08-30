@@ -27,10 +27,10 @@ const MyDreams = () => {
 
 							{/* dream words */}
 							<div className='md:w-3/5'>
-								<div className='flex flex-col items-center justify-center md:h-screen ml-10 border-5 border-yellow background-highlight text-highlight space-y-4'>
-									<p className='text-4xl'>{dream.header}</p>
+								<div className='flex flex-col items-center justify-center md:h-screen ml-10 border-5 border-yellow background-highlight text-highlight text-pretty text-sm md:text-base lg:text-lg space-y-4'>
+									<p className='text-xl font-extrabold tracking-wider md:text-4xl lg:text-6xl'>{dream.header}</p>
 									<p className='tracking-tighter mx-12 '>{dream.description}</p>
-									<p className='font-semibold tracking-wider'>{dream.plan}</p>
+									<p className='font-semibold tracking-wider '>{dream.plan}</p>
 								</div>
 							</div>
 

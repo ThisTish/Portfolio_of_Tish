@@ -73,13 +73,13 @@ const DreamDrop = () => {
 	const { acceptedFiles, getRootProps, getInputProps } = useDropzone({ onDrop })
 
 	return (
-		<div className="flex justify-center md:justify-end md:mx-28 items-center md:text-4xl text-secondary pb-96">
+		<div className="flex justify-center md:justify-end md:mx-28 items-center md:text-4xl text-secondary">
 			<form className="dropzone flex flex-col items-center md:my-40 md:items-end space-y-10" id="dream-dropzone">
 				{/* start off */}
 				{picStatus === 'ready' && (
-					<div {...getRootProps()} className="w-48 md:w-96 h-48 md:h-96 bg-secondary border-8 border-highlight rounded-3xl flex items-end">
+					<div {...getRootProps()} className="w-48 md:w-96 h-48 md:h-96 bg-red border-8 border-highlight rounded-3xl flex items-end">
 						<input {...getInputProps()} placeholder="Place Your dream" />
-						<span className="text-primary tracking-widest leading-loose text-end px-5" >Place Your Dream Here</span>
+						<span className="text-highlight tracking-widest leading-loose text-end px-5" >Picture of your Dream</span>
 					</div>
 				)}
 			</form>
@@ -94,10 +94,10 @@ const DreamDrop = () => {
 					type='text'
 					name='title'
 					id='title'
-					placeholder='Title Your Dream'
+					placeholder='your dream...'
 					/>
 					<Button type="submit" text="Save Your Dream"/>
-					<ButtonSecondary text="clear" type="button" onClick={handleClear}/>
+					<ButtonSecondary text="Clear" type="button" onClick={handleClear}/>
 				
 				</form>
 			)}
