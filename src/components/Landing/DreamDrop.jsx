@@ -3,6 +3,7 @@ import { useCallback, useState } from "react"
 import Button from "../Utils/Button"
 import ButtonSecondary from "../Utils/ButtonSecondary"
 import Input from '../Utils/Input'
+import {FaCameraRetro } from 'react-icons/fa'
 
 const DreamDrop = () => {
 	const [preview, setPreview] = useState(null)
@@ -11,9 +12,9 @@ const DreamDrop = () => {
 	const [title, setTitle] = useState('')
 	const [imgSrc, setImgSrc] = useState(null)
 	const [uploadData, setUploadData] = useState(null)
+	
 
-	const handleClear = (event) =>{
-		event.preventDefault()
+	const handleClear = () =>{
 		setPicStatus('ready')
 		setPreview(null)
 		setFile([])
@@ -58,28 +59,28 @@ const DreamDrop = () => {
 		).then(res => res.json())
 		
 		setImgSrc(data.secure_url)
-	console.log(data.secure_url)
 
 		setUploadData(data)
-	console.log(imgSrc)
-	console.log(data)
+		
 
-	// push to data center for photoAlbum
-
-	setPicStatus('ready')
+		setPicStatus('saved')
 	}
 
 
 	const { acceptedFiles, getRootProps, getInputProps } = useDropzone({ onDrop })
 
 	return (
-		<div className="flex justify-center md:justify-end md:mx-28 items-center md:text-4xl text-secondary">
+		<div className="flex justify-center items-center text-secondary md:justify-end md:mx-28  md:text-4xl ">
 			<form className="dropzone flex flex-col items-center md:my-40 md:items-end space-y-10" id="dream-dropzone">
+				
 				{/* start off */}
 				{picStatus === 'ready' && (
-					<div {...getRootProps()} className="w-48 md:w-96 h-48 md:h-96 bg-red border-8 border-highlight rounded-3xl flex items-end">
-						<input {...getInputProps()} placeholder="Place Your dream" />
-						<span className="text-highlight tracking-widest leading-loose text-end px-5" >Picture of your Dream</span>
+					<div {...getRootProps()} className="w-48 md:w-96 h-48 md:h-96 bg-red border-8 border-highlight rounded-3xl shadow-lg">
+						<input {...getInputProps()} />
+						<div className="flex flex-col items-center p-5 font-bold">
+						<span className="text-highlight tracking-widest leading-loose text-center px-5" >Share Your Dream</span>
+						<FaCameraRetro className="text-4xl text-highlight" />
+						</div>
 					</div>
 				)}
 			</form>
@@ -87,7 +88,7 @@ const DreamDrop = () => {
 			{/* preview before save */}
 			{picStatus === 'preview' && (
 				<form onSubmit={handleSubmit} method="post" className="dropzone flex flex-col items-center md:my-40 md:items-end space-y-10" id="dream-dropzone">
-					<img src={preview} className="w-48 md:w-96 h-48 md:h-96 border-8 border-highlight rounded-3xl flex items-end" />
+					<img src={preview} className="w-48 md:w-96 h-48 md:h-96 border-8 border-highlight rounded-3xl flex items-end shadow-lg" />
 
 					<Input 
 					onChange={handleTitle}
@@ -97,9 +98,19 @@ const DreamDrop = () => {
 					placeholder='your dream...'
 					/>
 					<Button type="submit" text="Save Your Dream"/>
-					<ButtonSecondary text="Clear" type="button" onClick={handleClear}/>
-				
+					<ButtonSecondary text="Clear" type="button" onClick={handleClear}/>				
 				</form>
+			)}
+			{picStatus === 'saved' && (
+				<div className="flex flex-col my-10 items-center space-x-10">
+				<img src={preview} className="w-48 my-10 md:w-96 h-48 md:h-96 border-8 border-highlight rounded-3xl shadow-lg" />
+				<div className="flex flex-col items-center text-secondary ml-0">
+				<p className="text-2xl ">Dream saved!</p>
+				<p className="text-2xl ">Dream Display in progress</p>
+				<p className="text-2xl ">Check back soon!</p>
+				</div>
+				</div>
+
 			)}
 		</div>
 	)
@@ -107,6 +118,3 @@ const DreamDrop = () => {
 
 export default DreamDrop
 
-	{/* OLD */}
-					{/* <input onChange={handleTitle} type='text' name="title" id="title" placeholder='Title Your Dream' className="placeholder-primary rounded-3xl px-3" /> */}
-					{/* <button type="submit" className="text-primary font-semibold p-5 tracking-tighter text-xs bg-secondary rounded-full border-2 border-highlight hover:bg-green hover:border-0 md:text-base lg:text-lg">Add Your Dream</button> */}

@@ -1,7 +1,7 @@
 import DreamDrop from "../components/Landing/DreamDrop"
 import Hero from "../components/Landing/Hero"
 import MyDreams from "../components/Landing/MyDreams"
-// import YourDream from "../components/Landing/YourDream"
+import YourDream from "../components/Landing/YourDream"
 
 
 
@@ -22,15 +22,15 @@ const Landing = () => {
 					<MyDreams />
 				</div>
 		
-{/* 
-				<div>
+
+				{/* <div>
 					<YourDream />
 				</div> */}
 
-				<div className="pb-96 flex flex-col items-center justify-center bg-yellow ">
+				<div className="pb-96 space-y-28 flex flex-col items-center justify-center" style={{background: 'linear-gradient(to top, var(--yellow), var(--primary)'}}>
 			<h1 className='text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] md:text-5xl lg:text-7xl'>Your Dreams</h1>
 					<DreamDrop />
-					<p className="text-2xl text-secondary">(doesn't save quite yet)</p>
+					
 				</div>
 
 
