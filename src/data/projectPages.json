@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Game Galaxxy",
+		"tags": [
+			"JavaScript",
+			"React",
+			"Graphql",
+			"Tailwind",
+			"Apollo"
+		],
+		"videoSrc": "/assets/images/GameGalaxxy.png",
+		"description":"Gamer's tutorial hub",
+		"keyPoints": [
+			"dklscklj",
+			"dlskeke",
+			"lwkenlck"
+		],
+		"futureIdeas": "asdkf asd faskldas;df",
+		"websiteLink": "https://game-galaxxy.onrender.com/",
+		"repoLink": "https://github.com/TheKyleKirby/GAME-GALAXXY"
+	}
+]

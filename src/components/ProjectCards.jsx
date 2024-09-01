@@ -1,5 +1,6 @@
+// import { Link } from 'react-router-dom'
+{/* <Link to={`/project/${project.clickId1}`}></Link> */}
 
-// add tooltips for description/problem-solution
 const ProjectCards = ({ project }) => {
 
 	return (
@@ -14,16 +15,11 @@ const ProjectCards = ({ project }) => {
 				</div>
 				<div className="bg-yellow w-32 h-32 rounded-full md:min-w-48 md:h-48 lg:min-w-72 lg:h-72">
 					<a href={project.websiteLink1}>
-						<img src={project.imgSrc1} 
+						<img src={project.imgSrc1}
 							className='w-24 h-24 rounded-full grayscale brightness-100 hover:brightness-100 hover:grayscale-0 transition duration-300 ease-in-out md:w-32 md:h-32 lg:min-w-48 lg:h-48 ' />
 						</a>
 				</div>
 
-				<div className="">
-					
-					
-
-				</div>
 
 			</div>
 			{/* 2nd card (mirrored) */}
@@ -31,7 +27,7 @@ const ProjectCards = ({ project }) => {
 
 
 				<div className="bg-green w-32 h-32 rounded-full flex justify-end items-end md:min-w-48 md:h-48 lg:min-w-72 lg:h-72">
-				<a href={project.websiteLink2}><img src={project.imgSrc2} className='w-24 h-24 rounded-full grayscale brightness-90 hover:brightness-100 hover:grayscale-0 transition duration-300 ease-in-out md:w-32 md:h-32 lg:min-w-48 lg:h-48' /></a>
+					<a href={project.websiteLink2}><img src={project.imgSrc2} className='w-24 h-24 rounded-full grayscale brightness-90 hover:brightness-100 hover:grayscale-0 transition duration-300 ease-in-out md:w-32 md:h-32 lg:min-w-48 lg:h-48' /></a>
 				</div>
 
 				<div className="text-secondary bg-highlight py-5 -mt-4 -ml-4 rounded-full px-4 md:-ml-14 md:p-5 h-fit float md:text-end ">

@@ -1,12 +1,14 @@
 [
 
 	{	"id": "1",
+		"clickId1": "0",
 		"title1": "Game Galaxxy",
 		"description1":"Gamer's tutorial hub",
 		"imgSrc1": "/assets/images/GameGalaxxy.png",
 		"websiteLink1": "https://game-galaxxy.onrender.com/",
 		"repoLink1": "https://github.com/TheKyleKirby/GAME-GALAXXY", 
 		
+		"clickId2": "1",
 		"title2": "Blogology 2.0",
 		"description2":"A little tech blog",
 		"imgSrc2": "/assets/images/BlogologyPic.png",
@@ -14,13 +16,14 @@
 		"repoLink2": "https://github.com/ThisTish/Blogology2.0"
 	},
 	{	"id": "2",
+		"clickId1": "2",
 		"title1": "In Or Out",
 		"description1":"Get together with friends",
 		"imgSrc1": "/assets/images/InOrOut.png",
 		"websiteLink1": "https://in-or-out-6n4t.onrender.com/",
 		"repoLink1": "https://github.com/Sean-K-Madigan/In-Or-Out", 
 
-
+		"clickId2": "3",
 		"title2": "Checking the Weather",
 		"description2":"Get the weather",
 		"imgSrc2": "/assets/images/CheckingWeather.png",
@@ -28,12 +31,14 @@
 		"repoLink2": "https://github.com/ThisTish/Checking_the_Weather"
 	},
 	{	"id": "3",
+		"clickId1": "4",
 		"title1": "Blogology",
 		"description1":"Your blog site",
 		"imgSrc1": "/assets/images/BlogologyDark.png",
 		"websiteLink1": "https://thistish.github.io/Blogology/",
 		"repoLink1": "https://github.com/ThisTish/Blogology", 
 
+		"clickId2": "5",
 		"title2": "Movies & Munchies",
 		"description2":"Plan a night",
 		"imgSrc2": "/assets/images/MoviesMunchies.png",
