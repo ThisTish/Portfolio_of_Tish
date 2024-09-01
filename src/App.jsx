@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio.jsx'
 import ContactMe from './pages/ContactMe.jsx'
 import Resume from './pages/Resume.jsx'
 import { ThemeProvider } from './components/ThemeProvider.jsx'
+import Project from './pages/Project.jsx'
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <Route path='portfolio' element={<Portfolio />} />
             <Route path='contact' element={<ContactMe />} />
             <Route path='resume' element={<Resume />} />
+            <Route path='project' element={<Project />} />
           </Route>
         </Routes>
       </BrowserRouter>
