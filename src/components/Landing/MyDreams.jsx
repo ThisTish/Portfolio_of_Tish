@@ -19,16 +19,16 @@ const MyDreams = () => {
 	return (
 		<>
 		{/* md:container */}
-			<div className="md:container py-24 min-w-full space-y-24 mb-40 md:py-0 md:-pt-40" style={{background: 'linear-gradient(to top, var(--green), var(--primary)'}} >
+			<div className=" py-24 min-w-full space-y-12 mb-40 md:py-0 md:-pt-40" style={{background: 'linear-gradient(to top, var(--green), var(--primary)'}} >
 				{dreams.map((dream) => {
 					const imagePath = images[dream.image]
 					return (
-						<section className='md:h-screen md:flex md:snap-center md:scroll-py-10' key={dream.id}>
+						<section className=' md:flex md:snap-center md:scroll-py-10' key={dream.id}>
 
 							{/* dream words */}
 							<div className='md:w-3/5'>
-								<div className='flex flex-col items-center justify-center md:h-screen ml-10 border-5 border-yellow background-highlight text-highlight text-pretty text-sm md:text-base lg:text-lg space-y-4'>
-									<p className='text-xl font-extrabold tracking-wider md:text-4xl lg:text-6xl'>{dream.header}</p>
+								<div className='flex flex-col items-center md:h-screen justify-center ml-10 border-5 border-yellow background-highlight text-highlight text-pretty space-y-4'>
+									<p className='text-xl font-extrabold tracking-wider md:text-2xl lg:text-4xl'>{dream.header}</p>
 									<p className='tracking-tighter mx-12 '>{dream.description}</p>
 									<p className='font-semibold tracking-wider '>{dream.plan}</p>
 								</div>

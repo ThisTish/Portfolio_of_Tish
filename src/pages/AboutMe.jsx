@@ -7,7 +7,7 @@ const AboutMe = () => {
 			<h2 className="text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] hidden md:block mx-3 my-1 lg:m-16 lg:text-end md:text-5xl lg:text-7xl">About Me</h2>
 			<div className="flex flex-col-reverse sm:flex-row md:mt-14 md:items-center">
 				{/* about me */}
-				<div className="container border-green border-8 space-y-3 px-3 pb-14 -mt-10 mx-auto rounded-br-3xl rounded-bl-3xl border-t-0 bg-highlight max-w-96 md:border-t-8 md:rounded-3xl ">
+				<div className=" border-green border-8 space-y-3 px-3 pb-14 -mt-10 mx-auto rounded-br-3xl rounded-bl-3xl border-t-0 bg-highlight max-w-96 md:border-t-8 md:rounded-3xl ">
 					<h3 className="text-red text-xl font-bold pt-10 lg:text-3xl ">aboutMe</h3>
 
 					<p className="text-secondary px-5 py-5 font-semibold text-end lg:text-lg">
@@ -62,7 +62,7 @@ const AboutMe = () => {
 				</div>
 
 				{/* random facts */}
-				<div className="container border-green border-8 space-y-3 px-3 pb-14 -mt-7 mx-auto max-w-lg rounded-3xl bg-highlight">
+				<div className=" border-green border-8 space-y-3 px-3 pb-14 -mt-7 mx-auto max-w-lg rounded-3xl bg-highlight">
 					<h3 className="text-red text-xl font-bold  py-5 lg:text-3xl">randomFacts</h3>
 					<p className="text-secondary px-5 font-semibold text-end lg:text-lg lg:pb-7">
 						&nbsp;&nbsp;&nbsp;&nbsp;I've been <span className="text-green brightness-75">crocheting</span> since I was 6 years old and have had some unique work experiences, including working on a train in <span className="text-green brightness-75">Alaska</span> and starting my first job at a resort in <span className="text-green brightness-75">Island Park, ID, near Yellowstone</span>. A while back, I placed second in the state for <span className="text-green brightness-75">women's disc golf</span>. While we love to throw them, my husband and I also enjoy <span className="text-green brightness-75">dyeing discs.</span> By the way, I'm a <span className="text-green brightness-75">Capricorn.</span>

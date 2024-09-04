@@ -70,16 +70,16 @@ const DreamDrop = () => {
 	const { acceptedFiles, getRootProps, getInputProps } = useDropzone({ onDrop })
 
 	return (
-		<div className="flex justify-center items-center text-secondary md:justify-end md:mx-28  md:text-4xl ">
+		<div className="flex justify-center items-center text-secondary md:justify-end md:mx-28">
 			<form className="dropzone flex flex-col items-center md:my-40 md:items-end space-y-10" id="dream-dropzone">
 				
 				{/* start off */}
 				{picStatus === 'ready' && (
-					<div {...getRootProps()} className="w-48 md:w-96 h-48 md:h-96 bg-red border-8 border-highlight rounded-3xl shadow-lg">
+					<div {...getRootProps()} className="w-48 md:w-60 lg:w-96 lg:h-96 h-48 md:h-60 bg-red border-8 border-highlight rounded-3xl shadow-lg">
 						<input {...getInputProps()} />
 						<div className="flex flex-col items-center p-5 font-bold">
-						<span className="text-highlight tracking-widest leading-loose text-center px-5" >Share Your Dream</span>
-						<FaCameraRetro className="text-4xl text-highlight" />
+						<span className="text-highlight tracking-widest leading-loose text-center md:text-xl lg:text-3xl px-5" >Share Your Dream</span>
+						<FaCameraRetro className="text-4xl md:text-5xl lg:text-6xl text-highlight" />
 						</div>
 					</div>
 				)}
