@@ -5,7 +5,7 @@
 			"JavaScript",
 			"React",
 			"Graphql",
-			"Tailwind",
+			"Tailwindcss",
 			"Apollo"
 		],
 		"videoSrc": "/assets/images/GameGalaxxy.png",
@@ -18,5 +18,105 @@
 		"futureIdeas": "asdkf asd faskldas;df",
 		"websiteLink": "https://game-galaxxy.onrender.com/",
 		"repoLink": "https://github.com/TheKyleKirby/GAME-GALAXXY"
+	},
+	{
+		"title": "Blogology 2.0",
+		"tags": [
+			"Handlebars.js",
+			"Sequelize",
+			"Espress.js",
+			"PostgreSQL",
+			"Tailwindcss"
+		],
+		"videoSrc": "",
+		"description":"Tech blog",
+		"keyPoints": [
+			"dklscklj",
+			"dlskeke",
+			"lwkenlck"
+		],
+		"futureIdeas": "asdkf asd faskldas;df",
+		"websiteLink": "https://blogology2-0.onrender.com/",
+		"repoLink": "https://github.com/ThisTish/Blogology2.0"
+	},
+	{
+		"title": "In Or Out",
+		"tags": [
+			"Express.js",
+			"Node",
+			"SQL",
+			"RESTful API",
+			"Sequelize"
+		],
+		"videoSrc": "",
+		"description":"Social event planner",
+		"keyPoints": [
+			"dklscklj",
+			"dlskeke",
+			"lwkenlck"
+		],
+		"futureIdeas": "asdkf asd faskldas;df",
+		"websiteLink": "https://in-or-out-6n4t.onrender.com/",
+		"repoLink": "https://github.com/Sean-K-Madigan/In-Or-Out"
+	},
+	{
+		"title": "Checking the Weather",
+		"tags": [
+			"Local Storage",
+			"Bootstrap",
+			"Github Pages",
+			"JQuery",
+			"OpenWeather API"
+		],
+		"videoSrc": "",
+		"description":"Weather page",
+		"keyPoints": [
+			"dklscklj",
+			"dlskeke",
+			"lwkenlck"
+		],
+		"futureIdeas": "asdkf asd faskldas;df",
+		"websiteLink": "https://thistish.github.io/Checking_the_Weather/",
+		"repoLink": "https://github.com/ThisTish/Checking_the_Weather"
+	},
+	{
+		"title": "Blogology",
+		"tags": [
+			"JavaScript",
+			"CSS",
+			"HTML",
+			"Local Storage",
+			"Light/Dark Mode"
+		],
+		"videoSrc": "",
+		"description":"Your own blog",
+		"keyPoints": [
+			"dklscklj",
+			"dlskeke",
+			"lwkenlck"
+		],
+		"futureIdeas": "asdkf asd faskldas;df",
+		"websiteLink": "https://thistish.github.io/Blogology/",
+		"repoLink": "https://github.com/ThisTish/Blogology"
+	},
+	{
+		"title": "Movies & Munchies",
+		"tags": [
+			"JQuery",
+			"CSS",
+			"TheMeal DB",
+			"TMDB",
+			"Group Project"
+		],
+		"videoSrc": "",
+		"description":"Movie & Meal picker",
+		"keyPoints": [
+			"dklscklj",
+			"dlskeke",
+			"lwkenlck"
+		],
+		"futureIdeas": "asdkf asd faskldas;df",
+		"websiteLink": "https://thistish.github.io/Movies-n-Munchies/",
+		"repoLink": "https://github.com/ThisTish/Movies-n-Munchies"
 	}
 ]

@@ -19,9 +19,8 @@ export default {
         highlight: 'var(--highlight)',
         shadow: 'var(--shadow)'
       },
-      // backgroundImage: {
-      //   'project-background': "url('./src/assets/images/projectBackground.png')"
-      // },
+    
+    
       fontFamily: {
         sans: ['Tilt Warp', 'Arial', 'sans-serif'],
         mono: ['Poppins', 'Times New Roman', 'Monaco', 'monospace' ]
