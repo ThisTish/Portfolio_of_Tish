@@ -9,13 +9,26 @@
 			"Apollo"
 		],
 		"videoSrc": "/assets/images/GameGalaxxy.png",
-		"description":"Gamer's tutorial hub",
-		"keyPoints": [
-			"dklscklj",
-			"dlskeke",
-			"lwkenlck"
+		"description":"Our gaming tutorial hub is a comprehensive platform designed to provide gamers with an easy way to find and create guides across all games and platforms. By integrating the IGDB API and utilizing GraphQL, the application allows users to search for tutorials, share their own, and engage with a community of players. It solves the problem of fragmented resources for gaming tutorials by consolidating everything into one interactive and user-friendly hub. Whether you're looking for beginner tips or advanced strategies, our platform makes it simple to access and contribute valuable gaming content. \n \nAs the project manager, I was responsible for overseeing the development process, ensuring that we stayed on track with deadlines, and distributing tasks efficiently among the team. I assisted with debugging, supported the team in resolving technical issues, and provided guidance when challenges arose. I also ensured the seamless integration of both front-end and back-end components to deliver a high-quality, interactive user experience."
+
+,
+		"keyPoints": [{
+			"title": "Cross-platform search: ",
+			"description":"Users can find tutorials for any game across all platforms, ensuring a comprehensive gaming resource"
+
+		},
+		{
+			"title":"User-generated content: " ,
+			"description": "Gamers can create and share their own guides, fostering a community-driven content hub"
+
+		},
+		{
+			"title": "Secure profile management: ",
+			"description": "The app offers secure user authentication, allowing users to manage their profiles and interact with the community"
+
+		}
 		],
-		"futureIdeas": "asdkf asd faskldas;df",
+		"futureIdeas": "In the future, we plan to expand the platform by implementing a rating system for tutorials, allowing users to upvote or review guides based on their quality and relevance. We also aim to introduce advanced filtering options and integrate live-streaming support for real-time gameplay tutorials, making the platform a go-to resource for gaming education. Additionally, we’ll enhance the community aspect by enabling user-to-user messaging and adding social features to increase interaction and engagement.",
 		"websiteLink": "https://game-galaxxy.onrender.com/",
 		"repoLink": "https://github.com/TheKyleKirby/GAME-GALAXXY"
 	},

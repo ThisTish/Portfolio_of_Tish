@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Button from '../components/Utils/Button'
 import ButtonSecondary from '../components/Utils/ButtonSecondary'
 import Headings from '../components/Utils/Headings'
+import ProjectCards from '../components/projectElements/ProjectCards'
 import { FaGithub } from 'react-icons/fa'
 import projects from '../data/projectPages.json'
 
@@ -27,15 +28,15 @@ const Project = () => {
 	const { title, tags, videoSrc, description, keyPoints, futureIdeas, websiteLink, repoLink } = project
 
 	return (
-		<div className='page flex flex-col m-10 space-y-16 md:space-y-24 lg:space-y-0 md:pb-32 lg:pb-48'>
-			<div className='flex flex-col space-y-6 md:space-y-10 lg:space-y-24'>
+		<div className='flex flex-col min-h-screen my-10 space-y-16 md:space-y-24 lg:space-y-0 md:pb-32 lg:pb-48'>
+			<div className='flex flex-col space-y-6 md:space-y-10  '>
 				<Headings text={title} />
 
 				<div className='tags flex flex-wrap space-x-4 justify-center text-xs text-secondary tracking-wider md:justify-start lg:ml-10 md:text-sm'>
-					{tags.map((tag, index) =>(
-					<div key={index} className='tag bg-yellow rounded-3xl m-2 border border-secondary'  >
-						<p className='px-3 py-1'>{tag}</p>
-					</div>
+					{tags.map((tag, index) => (
+						<div key={index} className='tag bg-yellow rounded-3xl m-2 border border-secondary'  >
+							<p className='px-3 py-1'>{tag}</p>
+						</div>
 					))}
 
 				</div>
@@ -46,27 +47,54 @@ const Project = () => {
 				<div className='video border-5 border-shadow bg-highlight rounded-3xl w-60 h-40 md:w-80 md:h-60 lg:w-96 lg:h-80'></div>
 
 				<div className='buttons flex space-x-5 items-center'>
-					<a href={websiteLink}><Button text='Website'/></a>
+					<a href={websiteLink}><Button text='Website' /></a>
 					<a href={repoLink}><ButtonSecondary text='Code' icon={<FaGithub className='m-1' />} /></a>
 				</div>
 			</div>
 
-			<div className='paragraph flex flex-col items-center p-10 text-center text-secondary space-y-10 lg:w-1/3 lg:absolute lg:top-2/3 md:pb-40'>
-				<p className='bg-highlight border-4 border-yellow rounded-3xl p-4'>{description}</p>
+			<div className='flex flex-col items-center p-10 text-center text-secondary space-y-10 lg:w-1/3 lg:mx-40 md:pb-40'>
 
-				<div className='bg-green px-3 text-highlight border-4 border-highlight rounded-3xl py-4 space-y-1 '>
-					<h3>Key Features</h3>
-					<ul className='keyPoints'>
-						{keyPoints.map((kp, index) => (
-							<li key={index}>{kp}</li>
-						))}
+			{/* about */}
+				<ProjectCards 
+					title="About the Project"
+					titleBgColor="yellow"
+					titleTextColor="highlight"
+					borderColor="yellow"
+					bgColor="highlight"
+					>
+					<p>{description}</p>
+				</ProjectCards>
+
+			{/* Key Features */}
+				<ProjectCards 
+					title="Key Features"
+					titleBgColor="highlight"
+					titleTextColor="green"
+					borderColor="highlight"
+					bgColor="green"
+					>
+					<ul className='keyPoints mx-auto space-y-4 leading-tight w-3/4'>
+					{keyPoints.map((kp, index) => (
+						<li key={index}>
+							<span className='font-semibold tracking-wide'>{kp.title}<br /></span>{kp.description} </li>
+					))}
 					</ul>
-				</div>
+				</ProjectCards>
 
-				<div className='bg-highlight border-4 border-secondary p-4 rounded-3xl'>
-					<h3 className='text-red'>Future Development</h3>
-					<p>{futureIdeas}</p>
-				</div>
+			{/* Future Development */}
+				<ProjectCards 
+					title="Future Development"
+					titleBgColor="secondary"
+					titleTextColor="highlight"
+					borderColor="secondary"
+					bgColor="highlight"
+					>
+					<p className='tracking-tight leading-tight'>{futureIdeas}</p>
+				</ProjectCards>
+
+
+
+				
 			</div>
 
 		</div>
