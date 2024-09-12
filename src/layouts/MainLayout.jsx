@@ -3,6 +3,7 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import { FaHouseUser, FaCanadianMapleLeaf, FaUmbrellaBeach, FaMoon } from 'react-icons/fa'
 import { useTheme } from '../components/ThemeProvider'
+import { FaArrowCircleUp } from 'react-icons/fa'
 
 
 const MainLayout = () => {
@@ -19,6 +20,7 @@ const MainLayout = () => {
 						<FaUmbrellaBeach onClick={() => setTheme("summer")} />
 						<FaMoon onClick={() => setTheme("grayscale")} />
 					</div>
+				<a href='#top' className='text-secondary text-3xl md:text-4xl lg:text-5xl rounded-full bg-highlight bg-opacity-55 opacity-55 fixed bottom-20 right-5 md:bottom-24 md:right-10 lg:bottom-28 lg:right-12 '><FaArrowCircleUp /></a>
 				</div>
 				<Outlet />
 				<Footer />

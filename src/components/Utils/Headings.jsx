@@ -10,7 +10,7 @@ const Headings = ({text}) => {
 			<div className="border border-shadow border-3 w-5 h-5 rounded-full absolute right-10 lg:right-40 "></div>
 			<div className="bg-green w-3 h-3 rounded-full absolute bottom-5 right-32"></div>
 			<div className="bg-secondary w-5 h-5 rounded-full absolute top-2 right-10 -z-10 "></div>
-			<h2 className="text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] mx-3 my-1 md:text-5xl lg:m-16 lg:text-7xl">{text}</h2>
+			<h2 className="text-highlight text-2xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] mx-3 my-1 md:text-3xl lg:m-16 lg:text-5xl">{text}</h2>
 		</div>
 	)
 }
