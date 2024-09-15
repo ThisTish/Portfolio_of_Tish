@@ -47,8 +47,8 @@ const Project = () => {
 				<div className='video border-5 border-shadow bg-highlight rounded-3xl w-60 h-40 md:w-80 md:h-60 lg:w-96 lg:h-80'></div>
 
 				<div className='buttons flex space-x-5 items-center'>
-					<a href={websiteLink}><Button text='Website' /></a>
-					<a href={repoLink}><ButtonSecondary text='Code' icon={<FaGithub className='m-1' />} /></a>
+					<a href={websiteLink} aria-label={title}><Button text='Website' /></a>
+					<a href={repoLink} aria-label={`${title} GitHub repository`}><ButtonSecondary text='Code' icon={<FaGithub className='m-1' />} /></a>
 				</div>
 			</div>
 

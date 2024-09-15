@@ -26,11 +26,36 @@ const Footer = () => {
 					<div className="hidden md:block bg-green w-3 h-3 rounded-full absolute top-5 -right-56"></div>
 					<div className="hidden md:block bg-secondary border-white border-3 border w-5 h-5 rounded-full absolute top-12 -right-64 "></div>
 					{/* links */}
-					<a href= "https://www.instagram.com/_thistish"className="-mt-1 bg-red rounded-full p-3 -ml-1 mr-1 z-10 md:mx-2 lg:mx-4"><FaInstagram /></a>
-					<a href= "https://x.com/SirTishFace"className="mt-6 bg-red rounded-full p-1  ml-1 mr-2 md:mx-4 lg:mx-8"><FaTwitter  /></a>
-					<NavLink to= "contact"className="mt-2 bg-red rounded-full p-4 mx-3 md:mx-6 lg:mx-8"><FaEnvelope /></NavLink>
-					<a href= "https://www.linkedin.com/in/tishsirface/"className="mt-5 bg-red rounded-full p-4 -mx-1 md:mx-9 lg:mx-14"><FaLinkedinIn /></a>
-					<a href= "https://github.com/ThisTish"className="-mt-3 bg-red rounded-full p-5 ml-4 z-10  md:ml-8 md:-mt-6 lg:mx-16"><FaGithub /></a>
+					<a 
+					href= "https://www.instagram.com/_thistish"
+					className="-mt-1 bg-red rounded-full p-3 -ml-1 mr-1 z-10 md:mx-2 lg:mx-4"
+					aria-label="Instagram">
+						<FaInstagram />
+					</a>
+					<a 
+					href="https://x.com/SirTishFace"
+					className="mt-6 bg-red rounded-full p-1  ml-1 mr-2 md:mx-4 lg:mx-8"
+					aria-label="X">
+					<FaTwitter  />
+					</a>
+					<NavLink 
+					to="contact"
+					className="mt-2 bg-red rounded-full p-4 mx-3 md:mx-6 lg:mx-8"
+					aria-label="Contact">
+						<FaEnvelope />
+					</NavLink>
+					<a 
+					href="https://www.linkedin.com/in/tishsirface/"
+					className="mt-5 bg-red rounded-full p-4 -mx-1 md:mx-9 lg:mx-14"
+					aria-label="LinkedIn">
+						<FaLinkedinIn />
+					</a>
+					<a 
+					href= "https://github.com/ThisTish"
+					className="-mt-3 bg-red rounded-full p-5 ml-4 z-10  md:ml-8 md:-mt-6 lg:mx-16"
+					aria-label="GitHub">
+						<FaGithub />
+					</a>
 				</div>
 
 			</footer>

@@ -29,9 +29,9 @@ const ContactMe = () => {
 			</div>
 
 			<div className="bg-yellow h-12 flex flex-col items-end max-w-sm text-secondary mr-3 mb-10 lg:h-24">
-				<p className="text-lg -mt-3 font-semibold mr-60 lg:text-2xl lg:-mt-5 lg:pb-7 lg:text-nowrap">MESSAGE ME</p>
+				<h3 className="text-lg -mt-3 tracking-wide mr-60 lg:text-2xl lg:-mt-5 lg:pb-7 lg:text-nowrap">MESSAGE ME</h3>
 				<p className="mr-5 -mt-2 lg:text-lg">for projects, design, and development</p>
-				<h3 className="font-extrabold -mr-1 -mb-4 lg:text-2xl">-TISH</h3>
+				<p className="font-extrabold -mr-1 -mb-4 lg:text-2xl">-TISH</p>
 			</div>
 		</div>
 	)

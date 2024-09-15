@@ -18,7 +18,7 @@ My portfolio to display who I am and what I can do
 
 ## 💾 Installation <a id="installation"></a>
 
-visit the site [here](https://tish-sirface-portfolio.netlify.app/)
+visit the site [Tish Sirface's Portfolio](https://tish-sirface-portfolio.netlify.app/)
 
 ## 🖱️ Usage <a id="usage"></a>
 
@@ -69,4 +69,4 @@ MIT License
 
 ## 📺 Screenshot
 
-![alt text](assets/PortoflioScreenshot.png)
+![Screenshot of site](assets/PortoflioScreenshot.png)

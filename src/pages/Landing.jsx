@@ -18,7 +18,7 @@ const Landing = () => {
 				</div>
 
 				<div id="my-dreams">
-			<h1 className='text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] text-center md:-mb-7 md:text-5xl lg:text-7xl'>My Dreams</h1>
+			<h3 className='text-highlight text-2xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] text-center md:-mb-7 md:text-3xl lg:text-5xl'>My Dreams</h3>
 
 					<MyDreams />
 				</div>
@@ -29,7 +29,7 @@ const Landing = () => {
 				</div> */}
 
 				<div className="pb-96 space-y-28 flex flex-col items-center justify-center" style={{background: 'linear-gradient(to top, var(--yellow), var(--primary)'}}>
-			<h1 className='text-highlight text-2xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] md:text-5xl lg:text-7xl'>Your Dreams</h1>
+			<h3 className='text-highlight text-2xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] md:text-3xl lg:text-5xl'>Your Dreams</h3>
 					<DreamDrop />
 					
 				</div>

@@ -6,14 +6,16 @@
 		"description1":"Gamer's tutorial hub",
 		"imgSrc1": "/assets/images/GameGalaxxy.png",
 		"websiteLink1": "https://game-galaxxy.onrender.com/",
-		"repoLink1": "https://github.com/TheKyleKirby/GAME-GALAXXY", 
+		"repoLink1": "https://github.com/TheKyleKirby/GAME-GALAXXY" ,
+		"alt1": "Game Galaxxy Landing Page",
 		
 		"clickId2": "1",
 		"title2": "Blogology 2.0",
 		"description2":"A little tech blog",
 		"imgSrc2": "/assets/images/BlogologyPic.png",
 		"websiteLink2": "https://blogology2-0.onrender.com/",
-		"repoLink2": "https://github.com/ThisTish/Blogology2.0"
+		"repoLink2": "https://github.com/ThisTish/Blogology2.0",
+		"alt2": "Blogology 2.0 Landing Page"
 	},
 	{	"id": "2",
 		"clickId1": "2",
@@ -22,13 +24,15 @@
 		"imgSrc1": "/assets/images/InOrOut.png",
 		"websiteLink1": "https://in-or-out-6n4t.onrender.com/",
 		"repoLink1": "https://github.com/Sean-K-Madigan/In-Or-Out", 
+		"alt1": "In or Out Logo",
 
 		"clickId2": "3",
 		"title2": "Checking the Weather",
 		"description2":"Get the weather",
 		"imgSrc2": "/assets/images/CheckingWeather.png",
 		"websiteLink2": "https://thistish.github.io/Checking_the_Weather/",
-		"repoLink2": "https://github.com/ThisTish/Checking_the_Weather"
+		"repoLink2": "https://github.com/ThisTish/Checking_the_Weather",
+		"alt2": "Checking the Weather App"
 	},
 	{	"id": "3",
 		"clickId1": "4",
@@ -37,13 +41,15 @@
 		"imgSrc1": "/assets/images/BlogologyDark.png",
 		"websiteLink1": "https://thistish.github.io/Blogology/",
 		"repoLink1": "https://github.com/ThisTish/Blogology", 
+		"alt1": "Blogology Landing App",
 
 		"clickId2": "5",
 		"title2": "Movies & Munchies",
 		"description2":"Plan a night",
 		"imgSrc2": "/assets/images/MoviesMunchies.png",
 		"websiteLink2": "https://thistish.github.io/Movies-n-Munchies/",
-		"repoLink2": "https://github.com/ThisTish/Movies-n-Munchies"
+		"repoLink2": "https://github.com/ThisTish/Movies-n-Munchies",
+		"alt2": "Movies & Munchies App"
 	}
 
 ]
