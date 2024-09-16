@@ -8,29 +8,27 @@
 			"Tailwindcss",
 			"Apollo"
 		],
-		"videoSrc": "/assets/images/GameGalaxxy.png",
-		"description":"Our gaming tutorial hub is a comprehensive platform designed to provide gamers with an easy way to find and create guides across all games and platforms. By integrating the IGDB API and utilizing GraphQL, the application allows users to search for tutorials, share their own, and engage with a community of players. It solves the problem of fragmented resources for gaming tutorials by consolidating everything into one interactive and user-friendly hub. Whether you're looking for beginner tips or advanced strategies, our platform makes it simple to access and contribute valuable gaming content. \n \nAs the project manager, I was responsible for overseeing the development process, ensuring that we stayed on track with deadlines, and distributing tasks efficiently among the team. I assisted with debugging, supported the team in resolving technical issues, and provided guidance when challenges arose. I also ensured the seamless integration of both front-end and back-end components to deliver a high-quality, interactive user experience."
-
-,
+		"description":"Our gaming tutorial hub is a comprehensive platform designed to provide gamers with an easy way to find and create guides across all games and platforms. By integrating the IGDB API and utilizing GraphQL, the application allows users to search for tutorials, share their own, and engage with a community of players. It solves the problem of fragmented resources for gaming tutorials by consolidating everything into one interactive and user-friendly hub. Whether you're looking for beginner tips or advanced strategies, our platform makes it simple to access and contribute valuable gaming content. \n \nAs the project manager, I was responsible for overseeing the development process, ensuring that we stayed on track with deadlines, and distributing tasks efficiently among the team. I assisted with debugging, supported the team in resolving technical issues, and provided guidance when challenges arose. I also ensured the seamless integration of both front-end and back-end components to deliver a high-quality, interactive user experience.",
 		"keyPoints": [{
 			"title": "Cross-platform search: ",
-			"description":"Users can find tutorials for any game across all platforms, ensuring a comprehensive gaming resource"
+			"description":"Users can find tutorials for any game across all platforms, ensuring a comprehensive gaming resource."
 
 		},
 		{
 			"title":"User-generated content: " ,
-			"description": "Gamers can create and share their own guides, fostering a community-driven content hub"
+			"description": "Gamers can create and share their own guides, fostering a community-driven content hub."
 
 		},
 		{
 			"title": "Secure profile management: ",
-			"description": "The app offers secure user authentication, allowing users to manage their profiles and interact with the community"
+			"description": "The app offers secure user authentication, allowing users to manage their profiles and interact with the community."
 
 		}
 		],
 		"futureIdeas": "In the future, we plan to expand the platform by implementing a rating system for tutorials, allowing users to upvote or review guides based on their quality and relevance. We also aim to introduce advanced filtering options and integrate live-streaming support for real-time gameplay tutorials, making the platform a go-to resource for gaming education. Additionally, we’ll enhance the community aspect by enabling user-to-user messaging and adding social features to increase interaction and engagement.",
 		"websiteLink": "https://game-galaxxy.onrender.com/",
-		"repoLink": "https://github.com/TheKyleKirby/GAME-GALAXXY"
+		"repoLink": "https://github.com/TheKyleKirby/GAME-GALAXXY",
+		"videoLink": "https://www.loom.com/embed/82572b095d7e4488b326c7e3b073fe45?sid=0401ce26-92d9-4e25-bb76-4b5af3bcdeca"
 	},
 	{
 		"title": "Blogology 2.0",
@@ -41,16 +39,27 @@
 			"PostgreSQL",
 			"Tailwindcss"
 		],
-		"videoSrc": "",
-		"description":"Tech blog",
-		"keyPoints": [
-			"dklscklj",
-			"dlskeke",
-			"lwkenlck"
+		"description":"This tech blog application allows users to post, edit, and delete articles, while engaging in discussions through comments. It addresses the need for a centralized platform where tech enthusiasts can share knowledge and insights. The responsive design ensures users can access the platform across various devices, enhancing the overall user experience. \n \n As the developer, I designed and engineered the layout using Tailwind CSS and Handlebars to ensure a responsive and intuitive interface. I facilitated user authentication for giving users the ability to create blog posts and comment on others. Additionally, I constructed and managed a SQL database using PostgreSQL and Sequelize to handle the backend structure. My responsibilities also included debugging and managing project timelines.",
+		"keyPoints": [{
+			"title": "User Authentication ",
+			"description":"Secure login and account management using JavaScript, Node.js, and Express."
+
+		},
+		{
+			"title":"Responsive Design" ,
+			"description": "A layout built with Tailwind CSS and Handlebars, ensuring accessibility on all device sizes."
+
+		},
+		{
+			"title": "Database Management ",
+			"description": "A robust SQL database for storing blog posts and user data, built using PostgreSQL and Sequelize."
+
+		}
 		],
-		"futureIdeas": "asdkf asd faskldas;df",
+		"futureIdeas": "Planned improvements include allowing users to edit and delete comments, displaying comment counts on the homepage for each post, and enhancing the overall design and script optimization for better performance and scalability.",
 		"websiteLink": "https://blogology2-0.onrender.com/",
-		"repoLink": "https://github.com/ThisTish/Blogology2.0"
+		"repoLink": "https://github.com/ThisTish/Blogology2.0",
+		"videoLink":"https://www.loom.com/embed/31158d6333884cc2b3de274397743971?sid=f55d126e-45b8-481f-b678-740dfa9939d4"
 	},
 	{
 		"title": "In Or Out",
@@ -61,16 +70,28 @@
 			"RESTful API",
 			"Sequelize"
 		],
-		"videoSrc": "",
-		"description":"Social event planner",
-		"keyPoints": [
-			"dklscklj",
-			"dlskeke",
-			"lwkenlck"
+		
+		"description":"This web application simplifies planning and coordinating activities & outings by allowing users to log in, create, and join events. By eliminating the need for group texting and waiting for replies, it offers a more streamlined and efficient solution for scheduling events. Built using Express, Sequelize, and Node, the app provides a responsive interface that works seamlessly across devices. \n \n As the Project Manager and Backend Developer, I was responsible for designing and building the web app and RESTful API. I developed the backend using Express, Sequelize, and Node.js to manage user authentication, event creation, and participation status along with user interactivity. I also facilitated quick changes to our plans to accommodate unforeseen circumstances that set us back. That required communication with the team to ensure timely progress and troubleshooting, contributing to both the project's functionality and overall success.",
+		"keyPoints": [{
+			"title": "User Event Management",
+			"description":"Users can log in, create, and join friends' events, simplifying event coordination."
+
+		},
+		{
+			"title":"Real-time Updates" ,
+			"description": "Immediate event updates for participants, reducing delays in planning and confirming attendance."
+
+		},
+		{
+			"title": "Backend API ",
+			"description": "Built a RESTful API with Express and Sequelize, ensuring secure and efficient data handling."
+
+		}
 		],
-		"futureIdeas": "asdkf asd faskldas;df",
+		"futureIdeas": "Future plans include integrating Google Maps API for location-based event planning, adding calendar functionality for easier scheduling, enabling recurring events, and optimizing the overall user experience with advanced features and design improvements.",
 		"websiteLink": "https://in-or-out-6n4t.onrender.com/",
-		"repoLink": "https://github.com/Sean-K-Madigan/In-Or-Out"
+		"repoLink": "https://github.com/Sean-K-Madigan/In-Or-Out",
+		"videoLink":"https://www.loom.com/embed/03a49bd728fd49a699efc6b45279403d?sid=dab86b1f-3621-49bd-9ac7-63259d958931"
 	},
 	{
 		"title": "Checking the Weather",
@@ -81,16 +102,28 @@
 			"JQuery",
 			"OpenWeather API"
 		],
-		"videoSrc": "",
-		"description":"Weather page",
-		"keyPoints": [
-			"dklscklj",
-			"dlskeke",
-			"lwkenlck"
+		
+		"description":"The weather dashboard application provides travelers with an easy way to plan their trips by offering real-time weather data for multiple cities. Users can search for any city and instantly view both current weather conditions and a 5-day forecast. The app solves the problem of having to search through multiple platforms for weather updates by consolidating all necessary information in one place, making trip planning more efficient. \n \n As the sole developer, I was responsible for every aspect of this project. I designed and implemented the entire application, utilizing technologies like jQuery, Bootstrap, and the OpenWeather API to provide up-to-date weather information. I incorporated local storage to save users' previous searches, ensuring a user-friendly experience that remembers past queries. The app was deployed on GitHub Pages for easy access.",
+		"keyPoints": [{
+			"title": "City Search Functionality",
+			"description":"Users can search for any city and instantly view current weather data along with a 5-day forecast."
+
+		},
+		{
+			"title":"Search History" ,
+			"description": "Previous city searches are saved using local storage, allowing for quick retrieval and re-searching."
+
+		},
+		{
+			"title": "Detailed Weather Information",
+			"description": "For each city, users are presented with current conditions (temperature, humidity, wind speed) and a clickable 5-day forecast with additional details."
+
+		}
 		],
-		"futureIdeas": "asdkf asd faskldas;df",
+		"futureIdeas": "In future updates, the app could incorporate features like auto-suggestions for city searches, multi-city comparison, and user notifications for severe weather alerts. Additionally, improving the design and performance of the app will further enhance user experience and accessibility.",
 		"websiteLink": "https://thistish.github.io/Checking_the_Weather/",
-		"repoLink": "https://github.com/ThisTish/Checking_the_Weather"
+		"repoLink": "https://github.com/ThisTish/Checking_the_Weather",
+		"videoLink":"https://www.loom.com/embed/32921ab31c71480e80a7b7b23f99ab62?sid=34152611-2443-4f3d-9f2d-daa85c43f505"
 	},
 	{
 		"title": "Blogology",
@@ -101,16 +134,28 @@
 			"Local Storage",
 			"Light/Dark Mode"
 		],
-		"videoSrc": "",
-		"description":"Your own blog",
-		"keyPoints": [
-			"dklscklj",
-			"dlskeke",
-			"lwkenlck"
+		
+		"description":"This personal blog application enables users to create and view blog posts, offering an intuitive interface for both content creation and post viewing. The website includes a content form for submitting blog entries, a posts page for reviewing previous submissions, and a light/dark mode toggle for personalized viewing preferences. The app is designed to give marketing students or aspiring bloggers a simple yet effective platform to showcase their thoughts and experiences \n \n As the creator of this project, I developed the entire website using JavaScript, HTML, and CSS. I built the functionality for storing blog posts in localStorage, ensuring users can save and access their content across sessions. I also implemented a light/dark mode toggle to enhance user experience, allowing for easy theme switching between light and dark modes.",
+		"keyPoints": [{
+			"title": "Content Submission Form",
+			"description":"Users can submit their blog posts, which are saved to localStorage and displayed on a separate page."
+
+		},
+		{
+			"title":"Light/Dark Mode Toggle" ,
+			"description": "Users can switch between light and dark mode, dynamically updating the style of the page."
+
+		},
+		{
+			"title": "Blog Post Persistence",
+			"description": "All blog entries are saved in localStorage, allowing them to be accessed later, even after the page is refreshed."
+
+		}
 		],
-		"futureIdeas": "asdkf asd faskldas;df",
+		"futureIdeas": "Upcoming improvements include a comment system for blog entries, enhanced validation features, and utilizing PWA for app download capabilities.",
 		"websiteLink": "https://thistish.github.io/Blogology/",
-		"repoLink": "https://github.com/ThisTish/Blogology"
+		"repoLink": "https://github.com/ThisTish/Blogology",
+		"videoLink":"https://www.loom.com/embed/d8c91aa23a7c4a5db996e120b6be3cad?sid=1a2ac508-460b-439d-ba8c-dc89529f271e"
 	},
 	{
 		"title": "Movies & Munchies",
@@ -121,15 +166,27 @@
 			"TMDB",
 			"Group Project"
 		],
-		"videoSrc": "",
-		"description":"Movie & Meal picker",
-		"keyPoints": [
-			"dklscklj",
-			"dlskeke",
-			"lwkenlck"
+		
+		"description":"Movies-n-Munchies is designed to be your ultimate movie night companion, helping you pair the perfect movie with a delicious recipe. Created out of our shared passion for movies and food, this application aims to eliminate the hassle of deciding what to eat or watch by offering seamless recommendations based on your preferences. The project also provided valuable experience in web application development and working with APIs. \n \n As the project manager for this first group project, I was heavily involved in the JavaScript development and contributed to other parts of the application's functionality. I coordinated the team, managed project timelines, and played a key role in integrating TheMealDB and TMDB APIs to ensure smooth operation and data flow.",
+		"keyPoints": [{
+			"title": "Movie and Recipe Planning",
+			"description":"Search for a movie to find a matching recipe or vice versa, making your movie night planning effortless."
+
+		},
+		{
+			"title":"Random Selection" ,
+			"description": " Use the random buttons to let the app choose a movie or recipe for you, adding an element of surprise to your evening."
+
+		},
+		{
+			"title": "API Integration",
+			"description": "Utilizes TheMealDB and TMDB APIs to provide accurate and up-to-date recommendations."
+
+		}
 		],
-		"futureIdeas": "asdkf asd faskldas;df",
+		"futureIdeas": "Planned features include personalized user profiles for saving favorite pairings, additional filtering options for recipes and movies, the ability to match up the type of movie with a type of food, and enhanced user interface design to improve overall user experience.",
 		"websiteLink": "https://thistish.github.io/Movies-n-Munchies/",
-		"repoLink": "https://github.com/ThisTish/Movies-n-Munchies"
+		"repoLink": "https://github.com/ThisTish/Movies-n-Munchies",
+		"videoLink":"https://www.loom.com/embed/0fc19df579b442ab92e8a223dea3bffa?sid=ebb659b2-740b-4c7f-8eef-09cae756c943"
 	}
 ]

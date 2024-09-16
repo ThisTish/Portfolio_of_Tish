@@ -25,16 +25,16 @@ const Project = () => {
 
 
 
-	const { title, tags, videoSrc, description, keyPoints, futureIdeas, websiteLink, repoLink } = project
+	const { title, tags, videoSrc, description, keyPoints, futureIdeas, websiteLink, repoLink, videoLink } = project
 
 	return (
 		<div className='flex flex-col min-h-screen my-10 space-y-16 md:space-y-24 lg:space-y-0 md:pb-32 lg:pb-48 xl:space-y-20'>
 			<div className='flex flex-col space-y-6 md:space-y-10 lg:space-y-20 '>
 				<Headings text={title} />
 
-				<div className='tags flex flex-wrap space-x-4 justify-center text-xs text-secondary tracking-wider md:justify-start lg:ml-10 md:text-sm lg:text-base'>
+				<div className='tags flex flex-wrap space-x-4 justify-center text-xs text-highlight tracking-wider md:justify-start lg:ml-10 md:text-sm lg:text-base'>
 					{tags.map((tag, index) => (
-						<div key={index} className='tag bg-yellow rounded-3xl m-2 border border-secondary'  >
+						<div key={index} className='tag bg-yellow rounded-3xl m-2 border border-highlight'  >
 							<p className='px-3 py-1'>{tag}</p>
 						</div>
 					))}
@@ -46,7 +46,7 @@ const Project = () => {
 			{/* small & xl video section */}
 			<div className='links flex flex-col items-center space-y-5 md:space-y-10 lg:hidden xl:flex xl:items-center'>
 				<iframe
-					src="https://www.loom.com/embed/82572b095d7e4488b326c7e3b073fe45?sid=0401ce26-92d9-4e25-bb76-4b5af3bcdeca"
+					src={videoLink}
 					allowfullscreen
 					className='rounded-3xl border-4 border-secondary grow-1 w-3/4 h-auto lg:w- xl:w-1/2 aspect-video'
 				>
@@ -105,9 +105,10 @@ const Project = () => {
 				{/* large video section */}
 				<div className=' hidden lg:flex flex-col w-1/2 items-center space-y-5 xl:hidden'>
 					<iframe
-						src="https://www.loom.com/embed/82572b095d7e4488b326c7e3b073fe45?sid=0401ce26-92d9-4e25-bb76-4b5af3bcdeca"
+						src={videoLink}
 						allowfullscreen
 						className='my-28 mr-10 rounded-3xl border-4 border-secondary w-full aspect-video'
+						aria-label='Walkthrough of the project'
 					>
 					</iframe>
 					<div className='buttons flex space-x-5 items-center'>
