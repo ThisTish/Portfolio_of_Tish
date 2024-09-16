@@ -77,7 +77,7 @@ const DreamDrop = () => {
 				{picStatus === 'ready' && (
 					<div {...getRootProps()} className="w-48 md:w-60 lg:w-96 lg:h-96 h-48 md:h-60 bg-red border-8 border-highlight rounded-3xl shadow-lg">
 						<label htmlFor="dream-image" className="sr-only">Upload an Image of your Dream</label>
-						<input {...getInputProps()} id="dream-image" type="image" alt="submit dream" />
+						<input {...getInputProps()} id="dream-image" alt="submit dream" />
 						<div className="flex flex-col items-center p-5 font-bold md:space-y-4">
 							<span className="text-highlight leading-loose text-center md:text-xl lg:text-3xl px-5" >Drop an image of your dream</span>
 							<FaCameraRetro className="text-4xl md:text-5xl lg:text-7xl text-highlight" />
