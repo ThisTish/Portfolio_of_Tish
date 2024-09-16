@@ -43,10 +43,14 @@ const Project = () => {
 			</div>
 
 
-			{/* small video section */}
-			<div className='links flex flex-col items-center space-y-5 md:space-y-10 lg:items-end lg:justify-start lg:hidden xl:flex xl:items-center'>
-				{/* video link here */}
-				<div className='video border-5 border-shadow bg-highlight rounded-3xl w-60 h-40 md:w-80 md:h-60 lg:w-96 lg:h-80'></div>
+			{/* small & xl video section */}
+			<div className='links flex flex-col items-center space-y-5 md:space-y-10 lg:hidden xl:flex xl:items-center'>
+				<iframe
+					src="https://www.loom.com/embed/82572b095d7e4488b326c7e3b073fe45?sid=0401ce26-92d9-4e25-bb76-4b5af3bcdeca"
+					allowfullscreen
+					className='rounded-3xl border-4 border-secondary grow-1 w-3/4 h-auto lg:w- xl:w-1/2 aspect-video'
+				>
+				</iframe>
 
 				<div className='buttons flex space-x-5 items-center'>
 					<a href={repoLink} aria-label={`${title} GitHub repository`}><ButtonSecondary text='Code' icon={<FaGithub className='m-1' />} /></a>
@@ -56,7 +60,7 @@ const Project = () => {
 
 
 			<div className="flex justify-between">
-				<div className='flex flex-col items-center p-10 text-center text-secondary gap-10 md:pb-40 lg:max-w-3xl xl:max-w-full xl:flex-row xl:items-end'>
+				<div className='flex flex-col items-center p-10 text-center text-secondary gap-10 md:pb-40 lg:w-1/2 xl:w-full xl:flex-row xl:items-end'>
 
 					{/* about */}
 					<ProjectCards
@@ -95,17 +99,20 @@ const Project = () => {
 					>
 						<p className='tracking-tight leading-tight'>{futureIdeas}</p>
 					</ProjectCards>
-					</div>
+				</div>
 
 
-					{/* large video section */}
-					<div className='links hidden lg:flex flex-col items-center space-y-5 md:space-y-10 xl:hidden'>
-						{/* video link here */}
-						<div className='video border-5 border-shadow bg-highlight rounded-3xl w-60 lg:mr-10 h-40 md:w-80 md:h-60 lg:w-96 lg:h-80'></div>
-
-						<div className='buttons flex space-x-5 items-center'>
-							<a href={repoLink} aria-label={`${title} GitHub repository`}><ButtonSecondary text='Code' icon={<FaGithub className='m-1' />} /></a>
-							<a href={websiteLink} aria-label={title}><Button text='Website' /></a>
+				{/* large video section */}
+				<div className=' hidden lg:flex flex-col w-1/2 items-center space-y-5 xl:hidden'>
+					<iframe
+						src="https://www.loom.com/embed/82572b095d7e4488b326c7e3b073fe45?sid=0401ce26-92d9-4e25-bb76-4b5af3bcdeca"
+						allowfullscreen
+						className='my-28 mr-10 rounded-3xl border-4 border-secondary w-full aspect-video'
+					>
+					</iframe>
+					<div className='buttons flex space-x-5 items-center'>
+						<a href={repoLink} aria-label={`${title} GitHub repository`}><ButtonSecondary text='Code' icon={<FaGithub className='m-1' />} /></a>
+						<a href={websiteLink} aria-label={title}><Button text='Website' /></a>
 					</div>
 				</div>
 
