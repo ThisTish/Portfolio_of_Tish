@@ -29,12 +29,14 @@ const Footer = () => {
 					<a 
 					href= "https://www.instagram.com/_thistish"
 					className="-mt-1 bg-red rounded-full p-3 -ml-1 mr-1 z-10 md:mx-2 lg:mx-4"
+					target="_blank" rel="noopener noreferrer"
 					aria-label="Instagram">
 						<FaInstagram />
 					</a>
 					<a 
 					href="https://x.com/SirTishFace"
 					className="mt-6 bg-red rounded-full p-1  ml-1 mr-2 md:mx-4 lg:mx-8"
+					target="_blank" rel="noopener noreferrer"
 					aria-label="X">
 					<FaTwitter  />
 					</a>
@@ -47,12 +49,14 @@ const Footer = () => {
 					<a 
 					href="https://www.linkedin.com/in/tishsirface/"
 					className="mt-5 bg-red rounded-full p-4 -mx-1 md:mx-9 lg:mx-14"
+					target="_blank" rel="noopener noreferrer"
 					aria-label="LinkedIn">
 						<FaLinkedinIn />
 					</a>
 					<a 
 					href= "https://github.com/ThisTish"
 					className="-mt-3 bg-red rounded-full p-5 ml-4 z-10  md:ml-8 md:-mt-6 lg:mx-16"
+					target="_blank" rel="noopener noreferrer"
 					aria-label="GitHub">
 						<FaGithub />
 					</a>

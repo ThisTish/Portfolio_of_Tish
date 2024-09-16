@@ -53,8 +53,8 @@ const Project = () => {
 				</iframe>
 
 				<div className='buttons flex space-x-5 items-center'>
-					<a href={repoLink} aria-label={`${title} GitHub repository`}><ButtonSecondary text='Code' icon={<FaGithub className='m-1' />} /></a>
-					<a href={websiteLink} aria-label={title}><Button text='Website' /></a>
+					<a href={repoLink} target="_blank" rel="noopener noreferrer" aria-label={`${title} GitHub repository`}><ButtonSecondary text='Code' icon={<FaGithub className='m-1' />} /></a>
+					<a href={websiteLink} target="_blank" rel="noopener noreferrer" aria-label={title}><Button text='Website' /></a>
 				</div>
 			</div>
 
@@ -112,8 +112,8 @@ const Project = () => {
 					>
 					</iframe>
 					<div className='buttons flex space-x-5 items-center'>
-						<a href={repoLink} aria-label={`${title} GitHub repository`}><ButtonSecondary text='Code' icon={<FaGithub className='m-1' />} /></a>
-						<a href={websiteLink} aria-label={title}><Button text='Website' /></a>
+						<a href={repoLink} target="_blank" rel="noopener noreferrer" aria-label={`${title} GitHub repository`}><ButtonSecondary text='Code' icon={<FaGithub className='m-1' />} /></a>
+						<a href={websiteLink} target="_blank" rel="noopener noreferrer" aria-label={title}><Button text='Website' /></a>
 					</div>
 				</div>
 

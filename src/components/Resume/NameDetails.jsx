@@ -13,7 +13,7 @@ const NameDetails = () => {
         801.309.7471 | Salt Lake City.UT
         </p>
         <p className=" font-sans mt-7 lg:text-xl">
-          <a href='https://github.com/ThisTish'aria-label='GitHub profile'>GitHub</a> | <a href='https://www.linkedin.com/in/tishsirface'aria-label='LinkedIn profile'>LinkedIn</a>
+          <a href='https://github.com/ThisTish'aria-label='GitHub profile' target="_blank" rel="noopener noreferrer" >GitHub</a> | <a href='https://www.linkedin.com/in/tishsirface'aria-label='LinkedIn profile' target="_blank" rel="noopener noreferrer" >LinkedIn</a>
         </p>
       </div>
     </div>

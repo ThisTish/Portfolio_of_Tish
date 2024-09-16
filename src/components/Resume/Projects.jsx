@@ -8,21 +8,24 @@ const Projects = () => {
         title: "In Or Out",
         languages: "JavaScript | SQL | Express.js | RESTful API",
         description: "Social site for friends and their activities",
-        url: "https://in-or-out-6n4t.onrender.com/"
+        url: "https://in-or-out-6n4t.onrender.com/",
+        clickId:"2"
       }, 
       {
         id: 2,
         title: "Blogology 2.0",
         languages: "Sequelize | Handlebars | Tailwind | Node.js",
         description: "Sleek and simple technology blog",
-        url: "https://blogology2-0.onrender.com/"
+        url: "https://blogology2-0.onrender.com/",
+        clickId: "1"
       },
       {
         id: 3,
         title: "Game Galaxxy",
         languages: "Graphql | JWT Token | Third-Party API | React",
         description: "A site to save, share, and rate gaming tutorials",
-        url: "https://game-galaxxy.onrender.com/"
+        url: "https://game-galaxxy.onrender.com/",
+        clickId: "0"
       }
 
     ]
@@ -39,7 +42,7 @@ const Projects = () => {
 			
       
       <div key={project.id} className=" text-highlight space-y-2">
-        <h5 className='font-sans font-xl lg:text-2xl lg:mt-10' aria-label={project.title}><a href={project.url}>{project.title}</a></h5>
+        <h5 className='font-sans font-xl lg:text-2xl lg:mt-10' aria-label={project.title}><a href={`/project/${project.clickId}`}>{project.title}</a></h5>
         <p className=" font-light tracking-tight text-sm lg:text-lg">
           {project.languages}
         </p>

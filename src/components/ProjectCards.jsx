@@ -37,7 +37,7 @@ const ProjectCards = ({ project }) => {
 
 				<div className="text-secondary bg-highlight py-5 -mt-4 -ml-4 rounded-full px-4 md:-ml-14 md:p-5 h-fit float md:text-end ">
 					<p className="text-xs font-semibold md:text-base lg:text-xl">{project.description2}</p>
-					<a href={project.websiteLink2}><h3 className=" font-extrabold text-sm m-1 md:text-lg lg:text-2xl" aria-label={`${project.title2}'s site`} >{project.title2}</h3></a>
+					<h3 className=" font-extrabold text-sm m-1 md:text-lg lg:text-2xl" aria-label={`${project.title2}'s site`} >{project.title2}</h3>
 					{/* <a className="text-shadow text-xs md:text-base lg:text-lg font-sans tracking-wide" href={project.repoLink2} aria-label={`${project.title2}'s code on GitHub`} >Repo</a> */}
 				</div>
 
