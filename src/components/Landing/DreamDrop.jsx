@@ -88,7 +88,7 @@ const DreamDrop = () => {
 
 			{/* preview before save */}
 			{picStatus === 'preview' && (
-				<form onSubmit={handleSubmit} method="post" className="dropzone flex flex-col items-center md:my-40 md:items-end space-y-10" id="dream-dropzone">
+				<form onSubmit={handleSubmit} method="post" className="dropzone max-w-xl flex flex-col items-center md:my-40 md:items-end space-y-10" id="dream-dropzone">
 					<img src={preview} className=" border-8 border-highlight rounded-3xl flex items-end shadow-lg" />
 					
 					<Input
@@ -103,8 +103,8 @@ const DreamDrop = () => {
 				</form>
 			)}
 			{picStatus === 'saved' && (
-				<div className="flex flex-col my-10 items-center space-x-10">
-					<img src={preview} alt="Preview of your dream" className="w-48 my-10 md:w-96 h-48 md:h-96 border-8 border-highlight rounded-3xl shadow-lg" />
+				<div className="flex flex-col my-10 items-center space-x-10 space-y-10">
+					<img src={preview} alt="Preview of your dream" className="max-w-80 md:max-w-xl border-8 border-highlight rounded-3xl shadow-lg" />
 					<div className="flex flex-col text-secondary space-y-3">
 						<p className="text-lg lg:text-xl ">Your Dream has been saved!</p>
 						<hr className="shadow-lg border-2 border-highlight w-3/4 rounded-3xl"></hr>
