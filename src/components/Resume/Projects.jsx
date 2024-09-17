@@ -34,7 +34,7 @@ const Projects = () => {
 
 
   <div className=" border-highlight bg-green border-8 w-fit space-y-3 pb-14 -mt-10 -mr-8 ml-6 rounded-3xl md:-mt-5 md:px-36 md:-ml-16 lg:ml-20 lg:-mt-10 lg:pb-24">
-    <h4 className="text-red text-2xl font-sans mr-5 flex flex-col items-end md:items-start md:-ml-20 lg:-mt-10 lg:text-4xl">(projects)</h4>
+    <h4 className="ml-5 mt-3 text-2xl font-sans flex flex-col text-highlight items-start md:items-center md:ml-0 md:pb-5 lg:items-start lg:-ml-20 lg:-mt-12 lg:text-red lg:text-4xl">(projects)</h4>
     <div className=" space-y-16 text-center px-10 py-7" >
 
     { projects.map((project) =>(

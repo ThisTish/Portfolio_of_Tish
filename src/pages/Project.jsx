@@ -34,7 +34,7 @@ const Project = () => {
 
 				<div className='tags flex flex-wrap space-x-4 justify-center text-xs text-highlight tracking-wider md:justify-start lg:ml-10 md:text-sm lg:text-base'>
 					{tags.map((tag, index) => (
-						<div key={index} className='tag bg-yellow rounded-3xl m-2 border border-highlight'  >
+						<div key={index} className='tag bg-red rounded-3xl m-2 border border-highlight'  >
 							<p className='px-3 py-1'>{tag}</p>
 						</div>
 					))}
