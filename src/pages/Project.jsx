@@ -4,7 +4,7 @@ import Button from '../components/Utils/Button'
 import ButtonSecondary from '../components/Utils/ButtonSecondary'
 import Headings from '../components/Utils/Headings'
 import ProjectCards from '../components/projectElements/ProjectCards'
-import { FaGithub } from 'react-icons/fa'
+import { FaArrowAltCircleLeft, FaGithub } from 'react-icons/fa'
 import projects from '../data/projectPages.json'
 
 const title = projects
@@ -116,10 +116,12 @@ const Project = () => {
 						<a href={websiteLink} target="_blank" rel="noopener noreferrer" aria-label={title}><Button text='Website' /></a>
 					</div>
 				</div>
-
-
+					
+			
 			</div>
-
+			<div className="flex self-center">
+				<ButtonSecondary text=' Back to Projects' onClick={() => window.location.href = '/portfolio'}></ButtonSecondary>
+			</div>
 		</div>
 	)
 }
