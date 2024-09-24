@@ -17,9 +17,9 @@ const images =
 const MyDreams = () => {
 
 	return (
+	
 		<>
-		{/* md:container */}
-			<div className="lg:container py-24 min-w-full space-y-12 mb-40 md:py-0 md:-pt-40" style={{background: 'linear-gradient(to top, var(--green), var(--primary)'}} >
+			<div className="lg:container py-24 min-w-full space-y-12 mb-40 md:py-0 md:-pt-40" style={{ background: 'linear-gradient(to top, var(--green), var(--primary)' }} >
 				{dreams.map((dream) => {
 					const imagePath = images[dream.image]
 					return (
