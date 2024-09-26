@@ -1,15 +1,8 @@
+
+
 import { RowsPhotoAlbum } from "react-photo-album"
 import "react-photo-album/rows.css"
 
-
-const getDreams = async () => {
-	const apiKey = import.meta.env.VITE_CLOUDINARY_API_KEY
-	const apiSecret = import.meta.env.VITE_CLOUDINARY_API_SECRET
-	const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME
-
-	const credentials = btoa(`${apiKey}:${apiSecret}`)
-	const url = `https://api.cloudinary.com/v1_1/${cloudName}/resources/image`
-}
 const Gallery = () => {
 
 	const getDreams = async () => {
@@ -32,12 +25,12 @@ const Gallery = () => {
 	} catch (error) {
 		console.log(error)
 	}
-	const results = getDreams()
+	const results = await getDreams()
 	console.log(results)
 
 	return (
 		<>		<h1>hi</h1>
-		{/* <p>{results.resources}</p> */}
+		<p>{results.resources}</p>
 		</>
 
 	)
