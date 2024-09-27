@@ -4,6 +4,7 @@ import Header from "../components/Header"
 import { FaHouseUser, FaCanadianMapleLeaf, FaUmbrellaBeach, FaMoon } from 'react-icons/fa'
 import { useTheme } from '../components/ThemeProvider'
 import { FaArrowCircleUp } from 'react-icons/fa'
+import Button from "../components/Utils/Button"
 
 
 const MainLayout = () => {
@@ -21,7 +22,7 @@ const MainLayout = () => {
 						<FaUmbrellaBeach onClick={() => setTheme("summer")} className="hover:scale-150" aria-label="Summer Colors"/>
 						<FaMoon onClick={() => setTheme("grayscale")} className="hover:scale-150" aria-label="Grayscale"/>
 					</div>
-				<a href='#top' aria-label="Scroll to top" className='text-secondary text-3xl md:text-4xl lg:text-5xl rounded-full bg-highlight bg-opacity-55 opacity-55 fixed bottom-20 right-7 md:bottom-24 md:right-10 lg:bottom-28 lg:right-12 '><FaArrowCircleUp /></a>
+				<button aria-label="Scroll to top" onClick={() => window.scrollTo(0,0)} className='text-secondary text-3xl md:text-4xl lg:text-5xl rounded-full bg-highlight bg-opacity-55 opacity-55 fixed bottom-20 right-7 md:bottom-24 md:right-10 lg:bottom-28 lg:right-12 '><FaArrowCircleUp /> </button>
 				</div>
 				<Outlet />
 				<Footer />
