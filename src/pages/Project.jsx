@@ -10,6 +10,11 @@ import projects from '../data/projectPages.json'
 const title = projects
 
 const Project = () => {
+
+	const scrollToTop = () => {
+		window.scrollTo(0, 0)
+	}
+
 	const [project, setProject] = useState(null)
 
 	const { id } = useParams()
@@ -116,11 +121,14 @@ const Project = () => {
 						<a href={websiteLink} target="_blank" rel="noopener noreferrer" aria-label={title}><Button text='Website' /></a>
 					</div>
 				</div>
-					
-			
+
 			</div>
 			<div className="flex self-center">
-				<ButtonSecondary text=' Back to Projects' onClick={() => window.location.href = '/portfolio'}></ButtonSecondary>
+				<Link to='/portfolio' className='flex items-center'>
+					<ButtonSecondary text=' Back to Projects' onClick={() => window.scrollTo(0, 0)}>
+						Back to Projects
+					</ButtonSecondary>
+				</Link>
 			</div>
 		</div>
 	)
