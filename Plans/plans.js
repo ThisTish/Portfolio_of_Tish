@@ -1,7 +1,3 @@
-// !WHEN I move my cursor out of one of the form fields without entering text
-// !THEN I receive a notification that this field is required
-	// * focus on an input, border changes, when valid, border changes
-	// *add accent-* to show when active, and when completed?
 
 // !WHEN I am presented with the Resume section
 // !THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
@@ -22,21 +18,36 @@
 			// * Hero/landing page
 				//* animate intro
 				// *parallax images filling in dreams, with what dream is, and how i'm working to achieve it
-				// *draw canvas for client to fill in their dreams
+				// *Mosiac react-photo-album w/ cloudinary
 			// *Projects needs work!
 				// * Scroll page animation
-				// * on image or title click or something, go to project page
-					// * gifs of app working
-					// *repo site
-					// *website
-					// *tech used
-					// *my role
-					// *problem solved
+				//  on image or title click or something, go to project page
+				// 	 gifs of app working
+				// 	repo site
+				// 	website
+				// 	tech used
+				// 	my role
+				// 	problem solved
 			//* underline animation. grows out from middle 
 			// *fonts
 
 	
 // !CUSTOM DOMAIN
+
+// ! Contact Page
+	// * labels/placeholders
+	// * bigger text area
+	// * submit animation/toast
+		// !WHEN I move my cursor out of one of the form fields without entering text
+// !THEN I receive a notification that this field is required
+	// * focus on an input, border changes, when valid, border changes
+	// *add accent-* to show when active, and when completed?
+
+
+// ! Hero
+	// * Name in hero, when scroll, it moves to nav bar
+	// *Socials by name, on scroll, they move to footer
+	
 
 	// *ICON
 			// to//do Express.js
