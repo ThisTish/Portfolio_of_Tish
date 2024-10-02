@@ -23,9 +23,10 @@ const MyDreams = () => {
 				{dreams.map((dream) => {
 					const imagePath = images[dream.image]
 					return (
-						<section className=' md:flex md:snap-center md:scroll-py-80' key={dream.id}>
+						<section className=' md:flex md:snap-top' key={dream.id}>
 
 							{/* dream words */}
+							{/* animate so pictures don't show until at position. or mask? */}
 							<div className='md:w-3/5'>
 								<div className='flex flex-col items-center md:h-screen justify-center ml-10 border-5 border-yellow background-highlight text-highlight text-pretty space-y-4'>
 									<h3 className='text-lg tracking-wider md:text-2xl lg:text-4xl'>{dream.header}</h3>
