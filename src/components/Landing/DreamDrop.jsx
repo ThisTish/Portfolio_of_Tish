@@ -12,6 +12,7 @@ const DreamDrop = () => {
 	const [title, setTitle] = useState('')
 	const [imgSrc, setImgSrc] = useState(null)
 	const [uploadData, setUploadData] = useState(null)
+	const [loading, setLoading] = useState(false)
 
 
 	const handleClear = () => {
@@ -41,7 +42,7 @@ const DreamDrop = () => {
 
 	const handleSubmit = async (event) => {
 		event.preventDefault()
-
+		setLoading(true)
 		if (!file[0]) return
 
 		const newDream = file[0]
@@ -78,9 +79,10 @@ const DreamDrop = () => {
 					<div {...getRootProps()} className="w-48 md:w-60 lg:w-96 lg:h-96 h-48 md:h-60 bg-red border-8 border-highlight rounded-3xl shadow-lg">
 						<label htmlFor="dream-image" className="sr-only">Upload an Image of your Dream</label>
 						<input {...getInputProps()} id="dream-image" alt="submit dream" />
-						<div className="flex flex-col items-center p-5 font-bold md:space-y-4">
-							<span className="text-highlight leading-loose text-center md:text-xl lg:text-3xl px-5" >Drop an image of your dream</span>
+						<div className="flex flex-col items-center p-5 font-bold lg:space-y-5">
+							<span className="text-highlight leading-tight lg:leading-loose text-center md:text-xl lg:text-3xl md:px-5" >Upload an image of your dream</span>
 							<FaCameraRetro className="text-4xl md:text-5xl lg:text-7xl text-highlight" />
+							<span className="text-highlight leading-tight lg:leading-loose text-center md:text-xl lg:text-3xl md:px-5" >Click or Drag n Drop here</span>
 						</div>
 					</div>
 				)}
@@ -90,15 +92,17 @@ const DreamDrop = () => {
 			{picStatus === 'preview' && (
 				<form onSubmit={handleSubmit} method="post" className="dropzone max-w-xl flex flex-col items-center md:my-40 md:items-end space-y-10" id="dream-dropzone">
 					<img src={preview} className=" border-8 border-highlight rounded-3xl flex items-end shadow-lg" />
-					
+					<div className="flex flex-col ">
+					<label htmlFor="dream-title" className="font-semibold" >Caption your dream</label>
 					<Input
 						onChange={handleTitle}
 						type='text'
 						id='dream-title'
-						placeholder='your dream...'
+						placeholder='optional'
 						srLabel='Title your Dream'
 					/>
-					<Button type="submit" text="Save Your Dream" />
+					</div>
+					<Button type="submit" text={loading ? 'Saving' : 'Save Your Dream'} disabled={loading}/>
 					<ButtonSecondary text="Clear" type="button" onClick={handleClear} />
 				</form>
 			)}
