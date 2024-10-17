@@ -5,28 +5,23 @@ const AboutMe = () => {
 
 	return (
 		<div className="flex flex-col mb-20">
-			{/* <h2 className="text-highlight text-3xl font-bold [text-shadow:_-2px_4px_0_var(--shadow)] hidden md:block mx-3 my-1 lg:m-16 lg:text-end md:text-5xl lg:text-7xl">About Me</h2> */}
 			<Headings text={'About Me'}/>
 
 			<div className="flex flex-col-reverse sm:flex-row md:mt-14 md:items-center">
 				{/* about me */}
 				<div className=" border-green border-8 space-y-3 pb-20 mx-auto rounded-br-3xl rounded-bl-3xl -mt-10 border-t-0 bg-highlight w-96 lg:w-1/3 md:border-t-8 md:rounded-3xl ">
-					{/* <h3 className="text-red text-xl font-bold pt-10 lg:text-3xl ">aboutMe</h3> */}
-
 					<p className="text-secondary p-10 mt-10 font-semibold lg:text-lg">
 						&nbsp;&nbsp;&nbsp;&nbsp;I vividly remember coming home after my first typing class in 5th grade and declaring to my mom, <span className="text-green brightness-75">"When I grow up, I want to type!"</span> Before even that, I remember at a very young age while learning how to count that <span className="text-green brightness-75">it's just a pattern!</span> Simple enough. Ever since then I have been obsessed with finding patterns all around me. On top of that, I've always loved playing games, card games, board games, and <span className="text-green brightness-75">especially puzzle games!</span> With these three things combined, I feel like I was made to be in this field of programming and web development. My obsessions with <span className="text-green brightness-75">learning, data, and research</span> push this point even further.
 						I firmly believe that life is meant for learning and experiencing as much as possible!
 					</p>
 				</div>
 
-				{/* add spinner */}
 				<ProfilePicAnimated />
 			</div>
 
 			<div className="flex flex-col lg:flex-row lg:items-end lg:space-x-12 lg:mr-24">
 				{/* loves */}
 				<div className=" border-yellow border-8 space-y-3 py-20 px-5 -mt-9 mx-auto rounded-3xl bg-highlight">
-					{/* <h3 className="text-red text-xl font-bold flex justify-end py-5 lg:text-3xl">gratitudeThings</h3> */}
 					<p className="text-secondary font-semibold lg:text-xl">
 						let loves = &#123;
 					</p>
@@ -75,7 +70,6 @@ const AboutMe = () => {
 
 			{/* want to learn */}
 			<div className="border-yellow border-8 space-y-3 py-20 px-5 -mt-9 mx-auto rounded-3xl bg-highlight md:mx-0 md:self-end md:max-w-fit md:mr-4">
-				{/* <h3 className="text-red text-xl font-bold flex justify-end py-5 lg:text-3xl">learningGoals</h3> */}
 				<p className="text-secondary font-semibold lg:text-xl">
 					let furtherStudies = &#123;
 				</p>

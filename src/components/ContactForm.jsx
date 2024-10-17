@@ -11,7 +11,6 @@ const ContactForm = () => {
 	const [nameError, setNameError] = useState('')
 	const [emailError, setEmailError] = useState('')
 	const [messageError, setMessageError] = useState('')
-	const [color, setColor] = useState('primary')
 	const [validEmail, setValidEmail] = useState(true)
 	const [sentMessage, setSentMessage] = useState('')
 	const [messageSent, setMessageSent] = useState(false)
@@ -23,16 +22,13 @@ const ContactForm = () => {
 			if(!value){
 				switch(name){
 					case "name":
-						setNameError('FieldRequired')
-						setColor('border-red')
+						setNameError('FieldRequired!')
 						break
 					case "email":
-						setEmailError('FieldRequired')
-						setColor('border-red')
+						setEmailError('FieldRequired!')
 						break
 					case "message":
-						setMessageError('FieldRequired')
-						setColor('border-red')
+						setMessageError('FieldRequired!')
 						break
 						default:
 							break
@@ -42,15 +38,12 @@ const ContactForm = () => {
 				switch(name){
 					case "name":
 						setNameError('')
-						setColor('border-primary')
 						break
 					case "email":
 						setEmailError('')
-						setColor('border-primary')
 						break
 					case "message":
 						setMessageError('')
-						setColor('border-primary')
 						break
 						default:
 							break
@@ -98,51 +91,51 @@ const ContactForm = () => {
 	return (
 		<div className="flex flex-col my-24 ">
 			<form ref={form} onSubmit={sendMessage}  className="space-y-10 flex flex-col items-end text-red font-light lg:text-xl">
-				<div>
-					<label htmlFor="name">Name</label>
+				<div className="flex flex-col text-end">
+					<label htmlFor="name" className="mr-5 font-semibold tracking-widest">Name</label>
 					<input 
 					type="text" 
 					id="name" 
 					name="name" 
-					className="max-w-48 rounded-full bg-highlight border-yellow border-4 p-2 text-secondary focus:color lg:max-w-52"
+					className="max-w-48 rounded-full bg-highlight border-yellow border-4 p-2 text-secondary outline-none focus:border-2 lg:max-w-52"
 					required
 					value={name}
 					onChange={(event) => setName(event.target.value)}
 					onBlur={handleInput}
 					/>
-					{nameError && <p className="text-red text-xs">{nameError}</p>}
+					{nameError && <p className="text-red text-sm">{nameError}</p>}
 				</div>
 
-				<div>
-					<label  htmlFor="email">Email</label>
+				<div className="flex flex-col text-end">
+					<label  htmlFor="email" className="mr-5 font-semibold tracking-widest">Email</label>
 					<input 
 					type="text" 
 					id="email" 
 					name="email" 
-					className="rounded-full bg-primary border-highlight border-4 mr-2 w-60 px-2 text-secondary focus:color lg:w-72" 
+					className="rounded-full bg-primary border-highlight border-4 mr-2 w-60 px-2 text-secondary outline-none focus:border-2 lg:w-72" 
 					required
 					value={email}
 					onChange={(event) => setEmail(event.target.value)}
 					onBlur={handleInput}
 
 					/>
-					{emailError && <p className="text-red text-xs">{emailError}</p>}
+					{emailError && <p className="text-red text-sm">{emailError}</p>}
 
 				</div>
 
-				<div>
-					<label  htmlFor="message" >Message</label>
+				<div className="flex flex-col text-end">
+					<label  htmlFor="message" className="mr-5 font-semibold tracking-widest">Message</label>
 					<textarea 
 					name="message" 
 					id="message" 
-					className="rounded-3xl h-32 w-72 border-8 bg-highlight border-green p-3 text-secondary focus:color lg:min-w-96 lg:h-52"
+					className="rounded-3xl h-64 w-80 border-8 bg-highlight border-green p-3 text-secondary outline-none focus:border-2 lg:w-96 lg:h-96"
 					required
 					value={message}
 					onChange={(event) => setMessage(event.target.value)}
 					onBlur={handleInput}
 
 					></textarea>
-					{messageError && <p className="text-red text-xs">{messageError}</p>}
+					{messageError && <p className="text-red text-sm">{messageError}</p>}
 					{/* add toastify? */}
 
 				</div>
