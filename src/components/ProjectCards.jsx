@@ -13,7 +13,7 @@ const ProjectCards = ({ project }) => {
 					<p className="">{project.description1}</p>
 				</div>
 				<Link
-					to={`/project/${project.clickId1}`}>
+					to={`/project/${project.title1}`}>
 					<button
 						className="size-20 text-center bg-red opacity-80 text-highlight absolute bottom-0 -left-4 rounded-full flex z-20 items-center border-2 border-highlight lg:size-24 lg: lg:text-xl lg:px-3 hover:opacity-100 hover:border-red hover:bg-highlight hover:text-red hover:scale-105 transition-transform ease-in duration-300 focus:outline-none focus:scale-105 focus:opacity-100"
 						onClick={() => window.scrollTo(0, 0)}>
@@ -39,7 +39,7 @@ const ProjectCards = ({ project }) => {
 				</div>
 
 				<Link
-					to={`/project/${project.clickId2}`}>
+					to={`/project/${project.title2}`}>
 					<button
 						className="size-20 text-center bg-red opacity-80 text-highlight absolute top-0 -right-4 rounded-full flex z-10 items-center border-2 border-highlight lg:size-24  lg:text-xl lg:px-3 hover:opacity-100 hover:border-red hover:bg-highlight hover:text-red hover:scale-105 transition-transform ease-in duration-300 focus:outline-none focus:scale-105 focus:opacity-100"
 						onClick={() => window.scrollTo(0, 0)}>

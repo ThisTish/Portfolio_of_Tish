@@ -64,7 +64,8 @@
 	body {
 		height: 100%;
 		margin: 0;
-		@apply font-mono
+		@apply font-mono;
+		overflow-x: hidden;
 	
 	}
 	

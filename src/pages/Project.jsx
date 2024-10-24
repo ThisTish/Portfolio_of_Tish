@@ -1,36 +1,41 @@
-import { Link, useParams } from 'react-router-dom'
+import { Link, redirect, useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Button from '../components/Utils/Button'
 import ButtonSecondary from '../components/Utils/ButtonSecondary'
 import Headings from '../components/Utils/Headings'
 import ProjectCards from '../components/projectElements/ProjectCards'
-import { FaArrowAltCircleLeft, FaGithub } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 import projects from '../data/projectPages.json'
 
-const title = projects
 
 const Project = () => {
 
-	const scrollToTop = () => {
-		window.scrollTo(0, 0)
-	}
-
 	const [project, setProject] = useState(null)
+	const [index, setIndex] = useState(null)
+	const [prevName, setPrevName] = useState(null)
+	const [nextName, setNextName] = useState(null)
 
-	const { id } = useParams()
-
+	const { name } = useParams()
 	useEffect(() => {
-		setProject(projects[id])
-	}, [id]
-	)
+		const foundProject = projects.find((project) => project.title === name);
+		setProject(foundProject)
+
+		const projectIndex = projects.findIndex((project) => project.title === name);
+		if (projectIndex !== -1) {
+			const prevIndex = (projectIndex - 1 + projects.length) % projects.length;
+			const nextIndex = (projectIndex + 1) % projects.length;
+			setPrevName(projects[prevIndex].title);
+			setNextName(projects[nextIndex].title);
+		}
+		
+	}, [name])
 
 	if (!project) {
 		return <p> Loading... </p>
 	}
 
-
-
 	const { title, tags, videoSrc, description, keyPoints, futureIdeas, websiteLink, repoLink, videoLink } = project
+
 
 	return (
 		<div className='flex flex-col min-h-screen my-10 space-y-16 md:space-y-24 lg:space-y-0 md:pb-32 lg:pb-48 xl:space-y-20'>
@@ -52,7 +57,7 @@ const Project = () => {
 			<div className='links flex flex-col items-center space-y-5 md:space-y-10 lg:hidden xl:flex xl:items-center'>
 				<iframe
 					src={videoLink}
-					allowfullscreen
+					allowFullScreen
 					className='rounded-3xl border-4 border-secondary grow-1 w-3/4 h-auto lg:w- xl:w-1/2 aspect-video'
 				>
 				</iframe>
@@ -111,7 +116,7 @@ const Project = () => {
 				<div className=' hidden lg:flex flex-col w-1/2 items-center space-y-5 xl:hidden'>
 					<iframe
 						src={videoLink}
-						allowfullscreen
+						allowFullScreen
 						className='my-28 mr-10 rounded-3xl border-4 border-secondary w-full aspect-video'
 						aria-label='Walkthrough of the project'
 					>
@@ -123,12 +128,20 @@ const Project = () => {
 				</div>
 
 			</div>
-			<div className="flex self-center">
+			<div className="flex justify-between">
+				{prevName && (
+					<Link to={`/project/${prevName}`} className='flex items-center' >
+						<Button text='Previous Project'  />
+					</Link>
+				)}
 				<Link to='/portfolio' className='flex items-center'>
-					<ButtonSecondary text=' Back to Projects' onClick={() => window.scrollTo(0, 0)}>
-						Back to Projects
-					</ButtonSecondary>
+					<ButtonSecondary text=' Back to Projects' />
 				</Link>
+				{nextName && (
+					<Link to={`/project/${nextName}`} className='flex items-center' >
+						<Button text='Next Project' />
+					</Link>
+				)}
 			</div>
 		</div>
 	)
