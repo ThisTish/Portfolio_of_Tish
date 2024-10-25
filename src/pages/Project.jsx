@@ -34,6 +34,13 @@ const Project = () => {
 		return <p> Loading... </p>
 	}
 
+	const scrollToTop = () => {
+		window.scrollTo({
+		  top: 0,
+		  behavior: "smooth"
+		});
+	  };
+
 	const { title, tags, videoSrc, description, keyPoints, futureIdeas, websiteLink, repoLink, videoLink } = project
 
 
@@ -131,15 +138,15 @@ const Project = () => {
 			<div className="flex justify-between">
 				{prevName && (
 					<Link to={`/project/${prevName}`} className='flex items-center' >
-						<Button text='Previous Project'  />
+						<Button text='Previous Project'  onClick={scrollToTop} />
 					</Link>
 				)}
 				<Link to='/portfolio' className='flex items-center'>
-					<ButtonSecondary text=' Back to Projects' />
+					<ButtonSecondary text=' Back to Projects' onClick={scrollToTop} />
 				</Link>
 				{nextName && (
 					<Link to={`/project/${nextName}`} className='flex items-center' >
-						<Button text='Next Project' />
+						<Button text='Next Project' onClick={scrollToTop} />
 					</Link>
 				)}
 			</div>

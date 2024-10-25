@@ -36,9 +36,8 @@
 
 // ! Contact Page
 	// * labels/placeholders
-	// * bigger text area
 	// * submit animation/toast
-		// !WHEN I move my cursor out of one of the form fields without entering text
+	// !WHEN I move my cursor out of one of the form fields without entering text
 // !THEN I receive a notification that this field is required
 	// * focus on an input, border changes, when valid, border changes
 	// *add accent-* to show when active, and when completed?
@@ -62,6 +61,7 @@
 			// to//do Figma
 			// to//do JQuery
 			// to//do Framer
-
+			// tod// o Next.js
+			// to.o TypeScript
 
 //! HAVE FUN, STAY CALM, MAKE IT ME
