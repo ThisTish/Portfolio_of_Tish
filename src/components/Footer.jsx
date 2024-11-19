@@ -33,13 +33,13 @@ const Footer = () => {
 					aria-label="Instagram">
 						<FaInstagram />
 					</a>
-					<a 
+					{/* <a 
 					href="https://x.com/SirTishFace"
 					className="mt-6 bg-red rounded-full p-1  ml-1 mr-2 md:mx-4 lg:mx-8"
 					target="_blank" rel="noopener noreferrer"
 					aria-label="X">
 					<FaTwitter  />
-					</a>
+					</a> */}
 					<NavLink 
 					to="contact"
 					className="mt-2 bg-red rounded-full p-4 mx-3 md:mx-6 lg:mx-8"

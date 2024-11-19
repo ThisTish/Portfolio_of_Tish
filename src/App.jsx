@@ -17,11 +17,12 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<MainLayout />} >
-            <Route index element={<Landing />} />,
+            <Route index element={<AboutMe />} />,
             <Route path='about' element={<AboutMe />} />
             <Route path='portfolio' element={<Portfolio />} />
             <Route path='contact' element={<ContactMe />} />
             <Route path='resume' element={<Resume />} />
+            <Route path='landing' element={<Landing />} />
             <Route path='project/:name' element={<Project />} />
 
           </Route>

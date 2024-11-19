@@ -22,7 +22,7 @@ const Portfolio = () => {
 						...or visit my GitHub to see more!
 					</p>
 
-					<a href="github.com/thistish" >
+					<a href="http://github.com/thistish" >
 						<FaGithub className=' bg-shadow text-highlight size-14 p-2 absolute -bottom-8 -right-4 shadow-sm shadow-highlight border-white border-2 hover:bg-highlight hover:text-shadow hover:scale-95 active:scale-95 active:bg-highlight active:text-shadow' />
 					</a>
 
